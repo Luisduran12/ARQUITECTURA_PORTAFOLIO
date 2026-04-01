@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería 3D Pop-Out – SWAG Arquitectos</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #0a0a0a;
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 24px;
+            gap: 80px;
+        }
+
+        /* ── Título ── */
+        .section-header {
+            text-align: center;
+            margin-bottom: -40px;
+        }
+
+        .section-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 400;
+            color: #fff;
+            letter-spacing: 0.08em;
+        }
+
+        .section-header p {
+            color: rgba(255, 255, 255, 0.35);
+            font-size: 0.85rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+
+        /* ── Fila de comparación ── */
+        .gallery-row {
+            display: flex;
+            gap: 60px;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* ── Etiqueta de comparación ── */
+        .card-label {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.75rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* ══════════════════════════════════
+       TARJETA 3D POP-OUT
+    ══════════════════════════════════ */
+        .card-wrapper {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card-3d {
+            width: 320px;
+            height: 420px;
+            perspective: 900px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.1s ease;
+            border-radius: 20px;
+            overflow: visible;
+        }
+
+        /* Marco principal */
+        .card-frame {
+            position: absolute;
+            inset: 0;
+            border-radius: 20px;
+            overflow: hidden;
+            background: #111;
+            box-shadow:
+                0 30px 80px rgba(0, 0, 0, 0.6),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+            transform-style: preserve-3d;
+        }
+
+        /* Imagen de fondo */
+        .card-bg-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            filter: brightness(0.9) contrast(1.05);
+            transition: filter 0.3s ease;
+        }
+
+        /* Overlay sutil al hover */
+        .card-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top,
+                    rgba(0, 0, 0, 0.65) 0%,
+                    rgba(0, 0, 0, 0.1) 55%,
+                    transparent 100%);
+            border-radius: 20px;
+        }
+
+        /* ── Objeto que "rompe" el marco ── */
+        .pop-object {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%) translateZ(0px);
+            width: 220px;
+            transition:
+                transform 0.1s ease,
+                filter 0.1s ease;
+            pointer-events: none;
+            z-index: 20;
+            will-change: transform;
+        }
+
+        /* Sombra difuminada del objeto que sale */
+        .pop-shadow {
+            position: absolute;
+            bottom: -55px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 30px;
+            background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.6) 0%, transparent 70%);
+            filter: blur(10px);
+            transition: transform 0.1s ease, opacity 0.2s ease;
+            pointer-events: none;
+            z-index: 18;
+            opacity: 0;
+        }
+
+        /* ── Etiqueta flotante con nombre del proyecto ── */
+        .project-tag {
+            position: absolute;
+            right: -130px;
+            top: 50%;
+            transform: translateY(-50%) translateZ(80px);
+            background: rgba(10, 10, 10, 0.9);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 14px 18px;
+            width: 130px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.25s ease, transform 0.1s ease;
+            z-index: 30;
+        }
+
+        .project-tag .tag-eyebrow {
+            font-size: 0.6rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: rgba(0, 200, 255, 0.7);
+            margin-bottom: 5px;
+        }
+
+        .project-tag .tag-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 0.95rem;
+            color: #fff;
+            line-height: 1.2;
+            font-weight: 400;
+        }
+
+        .project-tag .tag-sub {
+            font-size: 0.65rem;
+            color: rgba(255, 255, 255, 0.35);
+            margin-top: 6px;
+            letter-spacing: 0.1em;
+        }
+
+        /* Estado hover activo */
+        .card-3d:hover .pop-object {
+            filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.8));
+        }
+
+        .card-3d:hover .pop-shadow {
+            opacity: 1;
+        }
+
+        .card-3d:hover .project-tag {
+            opacity: 1;
+        }
+
+        .card-3d:hover .card-bg-img {
+            filter: brightness(1.05) contrast(1.08);
+        }
+
+        /* Línea decorativa lateral */
+        .project-tag::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 28px;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* ══════════════════════════════════
+       TARJETA PLANA (comparación)
+    ══════════════════════════════════ */
+        .card-flat {
+            width: 320px;
+            height: 420px;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            background: #111;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .card-flat img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-flat .card-overlay {
+            position: absolute;
+            inset: 0;
+        }
+
+        /* ── Instrucción ── */
+        .hint {
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.72rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.2);
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="section-header">
+        <h1>SWAG Arquitectos</h1>
+        <p>Efecto 3D Pop-Out — Demo Visual</p>
+    </div>
+
+    <div class="gallery-row">
+
+        <!-- ── TARJETA 3D ── -->
+        <div class="card-wrapper">
+            <div class="card-3d" id="card3d">
+                <div class="card-inner" id="cardInner">
+
+                    <div class="card-frame">
+                        <!-- Imagen de fondo: render de interior -->
+                        <img class="card-bg-img" src="/RENDERS/COCINA_INTERIOR/ci1.jpg" alt="Cocina Interior"
+                            onerror="this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=640&q=80'" />
+                        <div class="card-overlay"></div>
+                    </div>
+
+                    <!-- Objeto 3D que "rompe" el marco -->
+                    <img class="pop-object" id="popObj" src="/RENDERS/COCINA_INTERIOR/ci2.jpg" alt="Elemento pop"
+                        onerror="this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=640&q=80'"
+                        style="border-radius: 12px;" />
+
+                    <!-- Sombra del objeto -->
+                    <div class="pop-shadow" id="popShadow"></div>
+
+                    <!-- Etiqueta del proyecto -->
+                    <div class="project-tag">
+                        <div class="tag-eyebrow">Proyecto</div>
+                        <div class="tag-title">Cocina Interior Premium</div>
+                        <div class="tag-sub">Cúcuta, 2024</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card-label">Con efecto 3D — pasa el cursor</div>
+        </div>
+
+        <!-- ── TARJETA PLANA ── -->
+        <div class="card-wrapper">
+            <div class="card-flat">
+                <img src="/RENDERS/COCINA_INTERIOR/ci1.jpg" alt="Cocina Interior plana"
+                    onerror="this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=640&q=80'" />
+                <div class="card-overlay"></div>
+            </div>
+            <div class="card-label">Sin efecto — imagen plana</div>
+        </div>
+
+    </div>
+
+    <p class="hint">Mueve el cursor sobre la tarjeta izquierda</p>
+
+    <script>
+        const card = document.getElementById('card3d');
+        const inner = document.getElementById('cardInner');
+        const popObj = document.getElementById('popObj');
+        const popShadow = document.getElementById('popShadow');
+
+        const MAX_ROTATE = 15; // grados máximos de rotación
+        const POP_Z = 70;      // píxeles de profundidad del objeto
+
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const cx = rect.left + rect.width / 2;
+            const cy = rect.top + rect.height / 2;
+
+            const dx = e.clientX - cx;
+            const dy = e.clientY - cy;
+
+            const rotY = (dx / (rect.width / 2)) * MAX_ROTATE;
+            const rotX = -(dy / (rect.height / 2)) * MAX_ROTATE;
+
+            // Rotación 3D del marco
+            inner.style.transform = `rotateY(${rotY}deg) rotateX(${rotX}deg)`;
+
+            // El objeto del primer plano sale hacia adelante
+            const intensity = Math.sqrt((dx / rect.width) ** 2 + (dy / rect.height) ** 2);
+            const tz = POP_Z + intensity * 30;
+            const ox = (dx / rect.width) * 12;
+            const oy = (dy / rect.height) * 8;
+
+            popObj.style.transform = `
+        translateX(calc(-50% + ${ox}px))
+        translateY(${oy}px)
+        translateZ(${tz}px)
+        scale(1.08)
+      `;
+
+            // Sombra se desplaza opuesta a la inclinación
+            popShadow.style.transform = `translateX(calc(-50% + ${-ox * 1.5}px)) scaleX(${1 + intensity * 0.3})`;
+        });
+
+        card.addEventListener('mouseleave', () => {
+            inner.style.transform = 'rotateY(0deg) rotateX(0deg)';
+            popObj.style.transform = 'translateX(-50%) translateZ(0px) scale(1)';
+            popShadow.style.transform = 'translateX(-50%)';
+        });
+    </script>
+
+</body>
+
+</html>
