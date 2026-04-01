@@ -44,8 +44,7 @@ export default function InicioNosotros() {
           justifyContent="center"
           alignItems="center"
         >
-          <Image
-            src="./RENDERS/EDIFICIO/e1.jpg"
+          <Image loading="lazy" src="./RENDERS/EDIFICIO/e1.jpg"
             alt="Imagen de fondo"
             style={{
               width: "100%",
@@ -124,8 +123,7 @@ export default function InicioNosotros() {
       </Flex>
       {/* Imagen nítida en fondo para pantallas pequeñas */}
       {!isMdOrLarger && (
-        <Image
-          src="./RENDERS/EDIFICIO/e1.jpg"
+        <Image loading="lazy" src="./RENDERS/EDIFICIO/e1.jpg"
           alt="Imagen de fondo"
           style={{
             width: "100%",

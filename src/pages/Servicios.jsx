@@ -55,8 +55,7 @@ function Servicios() {
         position="relative"
         p="30px"
       >
-        <Image
-          src="./RENDERS/ZONA_TVs/zt4.png"
+        <Image loading="lazy" src="./RENDERS/ZONA_TVs/zt4.png"
           alt="Fondo"
           position="absolute"
           top="0"
@@ -101,8 +100,7 @@ function Servicios() {
               alignItems="center"
               flexDirection={{ base: "column", sm: "row" }}
             >
-              <Image
-                src={service.img}
+              <Image loading="lazy" src={service.img}
                 alt={service.text}
                 boxSize="80px"
                 objectFit="cover"
@@ -135,8 +133,7 @@ function Servicios() {
           display={{ base: "none", md: "none", lg: "block" }}
           position="relative"
         >
-          <Image
-            src="./RENDERS/ZONA_TVs/zt5.png"
+          <Image loading="lazy" src="./RENDERS/ZONA_TVs/zt5.png"
             alt="Sobrepuesto"
             width="100%"
             height="100%"

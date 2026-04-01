@@ -210,7 +210,7 @@ const WelcomeCover = ({ onEnter }) => {
 
         {/* Logo superior izquierdo */}
         <div className="welcome-logo">
-          <img src="/publico/HOR_WHITE.png" alt="Logo SWAG Arquitectos" />
+          <img loading="lazy" src="/publico/HOR_WHITE.png" alt="Logo SWAG Arquitectos" />
         </div>
 
         {/* Centro */}

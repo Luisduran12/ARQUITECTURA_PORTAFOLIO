@@ -279,7 +279,7 @@ const AdminPanel = () => {
                                 overflow="hidden"
                                 role="group"
                             >
-                                <Image src={img.url} w="100%" h="180px" objectFit="cover" />
+                                <Image loading="lazy" src={img.url} w="100%" h="180px" objectFit="cover" />
                                 <Box
                                     position="absolute"
                                     top={0}

@@ -62,8 +62,7 @@ const ServicioCard = ({ servicio, slug, index }) => {
       p={6}
       textAlign="center"
     >
-      <Image
-        src={servicio.imagen}
+      <Image loading="lazy" src={servicio.imagen}
         alt={servicio.titulo}
         borderRadius="md"
         mb={3}

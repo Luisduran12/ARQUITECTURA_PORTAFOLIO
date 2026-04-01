@@ -62,8 +62,7 @@ export default function Nosotros() {
         position="relative"
         p="30px"
       >
-        <Image
-          src="./RENDERS/ZONA_TVs/zt1.png"
+        <Image loading="lazy" src="./RENDERS/ZONA_TVs/zt1.png"
           alt="Fondo"
           position="absolute"
           top="0"
@@ -161,8 +160,7 @@ export default function Nosotros() {
                     justifyContent="center"
                     alignItems="center"
                   >
-                    <Image
-                      className="image image-animate image-1"
+                    <Image loading="lazy" className="image image-animate image-1"
                       src="./motores/D5R.png"
                       alt="Logo"
                       w="130px"
@@ -176,8 +174,7 @@ export default function Nosotros() {
                     justifyContent="center"
                     alignItems="center"
                   >
-                    <Image
-                      className="image image-animate image-2"
+                    <Image loading="lazy" className="image image-animate image-2"
                       src="./motores/ENSCAPE.png"
                       alt="Logo"
                       w="120px"
@@ -191,8 +188,7 @@ export default function Nosotros() {
                     justifyContent="center"
                     alignItems="center"
                   >
-                    <Image
-                      className="image image-animate image-3"
+                    <Image loading="lazy" className="image image-animate image-3"
                       src="./motores/LUMION.png"
                       alt="Logo"
                       w="60px"
@@ -206,8 +202,7 @@ export default function Nosotros() {
                     justifyContent="center"
                     alignItems="center"
                   >
-                    <Image
-                      className="image image-animate image-4"
+                    <Image loading="lazy" className="image image-animate image-4"
                       src="./motores/TWIMO.png"
                       alt="Logo"
                       w="130px"
@@ -221,8 +216,7 @@ export default function Nosotros() {
                     justifyContent="center"
                     alignItems="center"
                   >
-                    <Image
-                      className="image image-animate image-5"
+                    <Image loading="lazy" className="image image-animate image-5"
                       src="./motores/VRAY.png"
                       alt="Logo"
                       w="110px"
@@ -238,8 +232,7 @@ export default function Nosotros() {
                     justifyContent="center"
                     alignItems="center"
                   >
-                    <Image
-                      className="image image-animate image-1"
+                    <Image loading="lazy" className="image image-animate image-1"
                       src="./motores/D5R.png"
                       alt="Logo"
                       w="130px"
@@ -254,8 +247,7 @@ export default function Nosotros() {
                     justifyContent="center"
                     alignItems="center"
                   >
-                    <Image
-                      className="image image-animate image-2"
+                    <Image loading="lazy" className="image image-animate image-2"
                       src="./motores/ENSCAPE.png"
                       alt="Logo"
                       w="120px"
@@ -268,8 +260,7 @@ export default function Nosotros() {
                     justifyContent="center"
                     alignItems="center"
                   >
-                    <Image
-                      className="image image-animate image-3"
+                    <Image loading="lazy" className="image image-animate image-3"
                       src="./motores/LUMION.png"
                       alt="Logo"
                       w={["40px", "65px"]}
@@ -284,8 +275,7 @@ export default function Nosotros() {
                     justifyContent="center"
                     alignItems="center"
                   >
-                    <Image
-                      className="image image-animate image-4"
+                    <Image loading="lazy" className="image image-animate image-4"
                       src="./motores/TWIMO.png"
                       alt="Logo"
                       w="130px"
@@ -298,8 +288,7 @@ export default function Nosotros() {
                     justifyContent="center"
                     alignItems="center"
                   >
-                    <Image
-                      className="image image-animate image-5"
+                    <Image loading="lazy" className="image image-animate image-5"
                       src="./motores/VRAY.png"
                       alt="Logo"
                       w="110px"
@@ -349,8 +338,7 @@ export default function Nosotros() {
       // textAlign="center" // Centra el texto dentro de los boxes
       >
         <Box flex="1" boxShadow="md" p={4} m={10} textAlign="center">
-          <Image
-            src="./publico/PerfilFernando.jpg"
+          <Image loading="lazy" src="./publico/PerfilFernando.jpg"
             borderRadius="md"
             mb="40px"
             objectFit="contain"
@@ -379,8 +367,7 @@ export default function Nosotros() {
           </Text>
         </Box>
         <Box flex="1" boxShadow="md" p={4} m={10} textAlign="center">
-          <Image
-            src="./publico/PerfilJulian.jpeg"
+          <Image loading="lazy" src="./publico/PerfilJulian.jpeg"
             borderRadius="md"
             mb="40px"
             objectFit="contain"
@@ -419,7 +406,7 @@ export default function Nosotros() {
             >
               <ModalCloseButton />
               <ModalBody>
-                <Image src={selectedImage} w="100%" h="auto" />
+                <Image loading="lazy" src={selectedImage} w="100%" h="auto" />
               </ModalBody>
             </ModalContent>
           </Modal>

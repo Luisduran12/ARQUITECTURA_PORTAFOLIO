@@ -5,9 +5,12 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      input: {
-        main: 'index.html',
-        // Añadir otros puntos de entrada si es necesario
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            return 'vendor';
+          }
+        },
       },
     },
   },
