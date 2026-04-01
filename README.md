@@ -1,8 +1,11 @@
-# React + Vite
+# ARQUITECTURA_PORTAFOLIO
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portafolio profesional de arquitectura y visualización 3D. Esta plataforma interactiva, desarrollada con React y Vite, destaca proyectos mediante renders fotorrealistas, animaciones arquitectónicas y recorridos virtuales, ofreciendo una experiencia visual premium y moderna.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologías Utilizadas
+- **React.js** (v18)
+- **Vite** (Build Tool)
+- **Chakra UI** (Interfaz de usuario)
+- **Framer Motion** (Animaciones)
+- **i18next** (Multilenguaje)
+- **React Router** (Navegación)
