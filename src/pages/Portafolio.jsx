@@ -1,7 +1,6 @@
 import {
   Box,
   Flex,
-  Image,
   Text,
   Grid,
   Center,
@@ -10,6 +9,7 @@ import { useState } from "react";
 import CarpetaImagenes from "../components/CarpetaImagenes";
 import Card3DPopOut from "../components/Card3DPopOut";
 import { useTranslation } from "react-i18next";
+import LazyImage from "../components/LazyImage";
 
 const Portfolio = () => {
   const { t } = useTranslation();
@@ -54,7 +54,7 @@ const Portfolio = () => {
         position="relative"
         p="30px"
       >
-        <Image
+        <LazyImage
           src="/RENDERS/ZONA_TVs/zt4.webp"
           alt="Fondo Portafolio"
           position="absolute"
@@ -62,8 +62,7 @@ const Portfolio = () => {
           left="0"
           width="100%"
           height="100%"
-          objectFit="cover"
-          loading="eager"
+          priority={true}
         />
         <Box
           position="absolute"

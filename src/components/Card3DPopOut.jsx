@@ -103,6 +103,7 @@ const Card3DPopOut = ({
                         display="block"
                         loading="lazy"
                         decoding="async"
+                        fetchpriority="auto"
                         style={{
                             filter: "brightness(0.88) contrast(1.05)",
                             transition: "filter 0.3s ease",
@@ -154,6 +155,7 @@ const Card3DPopOut = ({
                     display="block"
                     loading="lazy"
                     decoding="async"
+                    fetchpriority="low"
                     style={{
                         transform: "translateX(-50%) translateZ(0px) scale(1)",
                         transition: "transform 0.1s ease, filter 0.1s ease",

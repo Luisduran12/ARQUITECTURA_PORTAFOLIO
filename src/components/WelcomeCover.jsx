@@ -16,7 +16,7 @@ const WelcomeCover = ({ onEnter }) => {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400&family=Inter:wght@200;300;400&display=swap');
+        /* Fonts are loaded globally via index.html — no @import needed here */
 
         .welcome-cover {
           position: fixed;
@@ -195,11 +195,12 @@ const WelcomeCover = ({ onEnter }) => {
         <video
           className="welcome-video"
           src="/videos/mi_portada.mp4"
-          poster="/RENDERS/EDIFICIO/e2.webp" // Imagen de pre-carga
+          poster="/RENDERS/EDIFICIO/e2.webp"
           autoPlay
           loop
           muted
           playsInline
+          preload="none"
         />
 
         {/* Overlay oscuro */}
@@ -210,7 +211,7 @@ const WelcomeCover = ({ onEnter }) => {
 
         {/* Logo superior izquierdo */}
         <div className="welcome-logo">
-          <img loading="lazy" src="/publico/HOR_WHITE.webp" alt="Logo SWAG Arquitectos" />
+          <img fetchpriority="high" src="/publico/HOR_WHITE.webp" alt="Logo SWAG Arquitectos" />
         </div>
 
         {/* Centro */}

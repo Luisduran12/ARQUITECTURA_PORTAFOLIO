@@ -2,7 +2,6 @@ import Slider from "react-slick";
 import {
   Flex,
   Box,
-  Image,
   useBreakpointValue,
   Button,
   Heading,
@@ -11,6 +10,7 @@ import { Link as RouterLink } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useTranslation } from "react-i18next";
+import LazyImage from "../components/LazyImage";
 
 const images = [
   { src: "./RENDERS/EDIFICIO/e1.webp" },
@@ -56,28 +56,13 @@ export default function InicioTrabajo() {
       </Heading>
       <Slider {...settings} style={{ width: "100%" }}>
         {images.map((image, index) => (
-          <Box
-            key={index}
-            position="relative"
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            width="100%"
-            height="0"
-            paddingBottom="60%"
-          >
-            <Image
+          <Box key={index} px={4}>
+            <LazyImage
               src={image.src}
               alt={`Proyecto de arquitectura ${index + 1}`}
-              position="absolute"
-              top="0"
-              left="50%"
-              transform="translateX(-50%)"
-              width="70%"
-              height="100%"
-              objectFit="cover"
+              aspectRatio="5/3"
+              width="100%"
               borderRadius="20px"
-              loading="lazy"
               boxShadow="0px 0px 20px rgba(0, 0, 0, 0.5)"
             />
           </Box>

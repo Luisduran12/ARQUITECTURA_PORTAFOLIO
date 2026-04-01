@@ -91,7 +91,9 @@ export default function Inicio() {
                 width="100%"
                 height="100%"
                 objectFit="cover"
-                loading={index === 0 ? "eager" : "lazy"} // Eager para la primera imagen
+                loading={index === 0 ? "eager" : "lazy"}
+                fetchpriority={index === 0 ? "high" : "auto"}
+                decoding={index === 0 ? "sync" : "async"}
                 position="absolute"
                 top="0"
                 left="0"
