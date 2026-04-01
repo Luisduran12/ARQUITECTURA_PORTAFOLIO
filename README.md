@@ -1,6 +1,6 @@
 # ARQUITECTURA_PORTAFOLIO
 
-Portafolio profesional de arquitectura y visualización 3D. Esta plataforma interactiva, desarrollada con React y Vite, destaca proyectos mediante renders fotorrealistas, animaciones arquitectónicas y recorridos virtuales, ofreciendo una experiencia visual premium y moderna.
+Plataforma web de visualización arquitectónica premium desarrollada con **React** y **Vite**. Especializada en la exhibición de proyectos mediante renders fotorrealistas, animaciones 3D y recorridos virtuales inmersivos. Integra **Chakra UI**, **Framer Motion** e **i18next** para ofrecer una experiencia bilingüe moderna y de alto rendimiento.
 
 ## Tecnologías Utilizadas
 - **React.js** (v18)
