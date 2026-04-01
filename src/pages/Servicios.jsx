@@ -6,22 +6,22 @@ function Servicios() {
   const services = [
     {
       color: "#1e1d1d",
-      img: "./servicios/FotoRealista.png",
+      img: "./servicios/FotoRealista.webp",
       text: "Foto Realista",
     },
     {
       color: "#1e1d1d",
-      img: "./servicios/Interiores.png",
+      img: "./servicios/Interiores.webp",
       text: "Interiores",
     },
     {
       color: "blackAlpha.500",
-      img: "./servicios/TresD.png",
+      img: "./servicios/TresD.webp",
       text: "3D",
     },
     {
       color: "blackAlpha.500",
-      img: "./servicios/Virtuales.png",
+      img: "./servicios/Virtuales.webp",
       text: "Virtuales",
     },
   ];
@@ -55,7 +55,7 @@ function Servicios() {
         position="relative"
         p="30px"
       >
-        <Image loading="lazy" src="./RENDERS/ZONA_TVs/zt4.png"
+        <Image loading="lazy" src="./RENDERS/ZONA_TVs/zt4.webp"
           alt="Fondo"
           position="absolute"
           top="0"
@@ -133,7 +133,7 @@ function Servicios() {
           display={{ base: "none", md: "none", lg: "block" }}
           position="relative"
         >
-          <Image loading="lazy" src="./RENDERS/ZONA_TVs/zt5.png"
+          <Image loading="lazy" src="./RENDERS/ZONA_TVs/zt5.webp"
             alt="Sobrepuesto"
             width="100%"
             height="100%"

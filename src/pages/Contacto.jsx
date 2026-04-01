@@ -57,7 +57,7 @@ function Contacto() {
 
   return (
     <Box
-      backgroundImage="url('./RENDERS/SALA/s4.jpg')"
+      backgroundImage="url('./RENDERS/SALA/s4.webp')"
       backgroundSize="cover"
       w="100%"
       h="100vh"

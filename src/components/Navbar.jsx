@@ -71,10 +71,10 @@ function Navbar() {
       <Flex direction="column">
         <Flex>
           <RouterLink to="/" aria-label="Inicio - SWAG Arquitectos">
-            <Image loading="lazy" src="./publico/HOR_WHITE.png" alt="Logo SWAG Arquitectos" w="120px" />
+            <Image loading="lazy" src="./publico/HOR_WHITE.webp" alt="Logo SWAG Arquitectos" w="120px" />
           </RouterLink>
           <RouterLink to="/" aria-label="Inicio - SWAG Arquitectos">
-            <Image loading="lazy" src="./publico/LogoJulian.png"
+            <Image loading="lazy" src="./publico/LogoJulian.webp"
               alt="Logo Julián"
               w="60px"
               ml="10px"

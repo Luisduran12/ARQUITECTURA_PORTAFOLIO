@@ -15,17 +15,17 @@ const Portfolio = () => {
   const { t } = useTranslation();
 
   const imagePaths = [
-    { src: "/RENDERS/EDIFICIO/e10.jpg", titulo: t("portafolio.edificio_ceiba_central"), sub: "Edificio Institucional · 2024", carpeta: "EDIFICIO" },
-    { src: "/RENDERS/ING_ECU/ie3.jpg", titulo: t("portafolio.casa_rg"), sub: "Residencial · 2024", carpeta: "ING_ECU" },
-    { src: "/RENDERS/HABITACION_NINA/hn4.jpg", titulo: t("portafolio.habitacion_nina"), sub: "Diseño Interior · 2024", carpeta: "HABITACION_NINA" },
-    { src: "/RENDERS/COCINA_INTERIOR/ci1.jpg", titulo: t("portafolio.cocina_interior"), sub: "Interior Premium · 2024", carpeta: "COCINA_INTERIOR" },
-    { src: "/RENDERS/HABITACION/h6.jpg", titulo: t("portafolio.habitacion_principal"), sub: "Suite Master · 2024", carpeta: "HABITACION" },
-    { src: "/RENDERS/HABITACION2/hb1.jpg", titulo: t("portafolio.dormitorio"), sub: "Dormitorio Moderno · 2024", carpeta: "HABITACION2" },
-    { src: "/RENDERS/MAQUETA1/m11.png", titulo: t("portafolio.render_maqueta"), sub: "Maqueta Arquitectónica", carpeta: "MAQUETA1" },
-    { src: "/RENDERS/FACHADA/f2.jpg", titulo: t("portafolio.fachada_proyecto_f24"), sub: "Fachada F24 · 2024", carpeta: "FACHADA" },
-    { src: "/RENDERS/ZONA_TVs/zt5.png", titulo: t("portafolio.zona_tv"), sub: "Zona Social · 2024", carpeta: "ZONA_TVs" },
-    { src: "/RENDERS/SALA/s4.jpg", titulo: t("portafolio.sala"), sub: "Living Space · 2024", carpeta: "SALA" },
-    { src: "/RENDERS/BBQ/b3.jpg", titulo: t("portafolio.zona_bbq"), sub: "Zona Exterior · 2024", carpeta: "BBQ" },
+    { src: "/RENDERS/EDIFICIO/e10.webp", titulo: t("portafolio.edificio_ceiba_central"), sub: "Edificio Institucional · 2024", carpeta: "EDIFICIO" },
+    { src: "/RENDERS/ING_ECU/ie3.webp", titulo: t("portafolio.casa_rg"), sub: "Residencial · 2024", carpeta: "ING_ECU" },
+    { src: "/RENDERS/HABITACION_NINA/hn4.webp", titulo: t("portafolio.habitacion_nina"), sub: "Diseño Interior · 2024", carpeta: "HABITACION_NINA" },
+    { src: "/RENDERS/COCINA_INTERIOR/ci1.webp", titulo: t("portafolio.cocina_interior"), sub: "Interior Premium · 2024", carpeta: "COCINA_INTERIOR" },
+    { src: "/RENDERS/HABITACION/h6.webp", titulo: t("portafolio.habitacion_principal"), sub: "Suite Master · 2024", carpeta: "HABITACION" },
+    { src: "/RENDERS/HABITACION2/hb1.webp", titulo: t("portafolio.dormitorio"), sub: "Dormitorio Moderno · 2024", carpeta: "HABITACION2" },
+    { src: "/RENDERS/MAQUETA1/m11.webp", titulo: t("portafolio.render_maqueta"), sub: "Maqueta Arquitectónica", carpeta: "MAQUETA1" },
+    { src: "/RENDERS/FACHADA/f2.webp", titulo: t("portafolio.fachada_proyecto_f24"), sub: "Fachada F24 · 2024", carpeta: "FACHADA" },
+    { src: "/RENDERS/ZONA_TVs/zt5.webp", titulo: t("portafolio.zona_tv"), sub: "Zona Social · 2024", carpeta: "ZONA_TVs" },
+    { src: "/RENDERS/SALA/s4.webp", titulo: t("portafolio.sala"), sub: "Living Space · 2024", carpeta: "SALA" },
+    { src: "/RENDERS/BBQ/b3.webp", titulo: t("portafolio.zona_bbq"), sub: "Zona Exterior · 2024", carpeta: "BBQ" },
   ];
 
   const [selectedCarpeta, setSelectedCarpeta] = useState(null);
@@ -55,7 +55,7 @@ const Portfolio = () => {
         p="30px"
       >
         <Image
-          src="/RENDERS/ZONA_TVs/zt4.png"
+          src="/RENDERS/ZONA_TVs/zt4.webp"
           alt="Fondo Portafolio"
           position="absolute"
           top="0"

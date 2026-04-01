@@ -13,11 +13,11 @@ import "slick-carousel/slick/slick-theme.css";
 import { useTranslation } from "react-i18next";
 
 const images = [
-  { src: "./RENDERS/EDIFICIO/e1.jpg" },
-  { src: "./RENDERS/EDIFICIO/e4.jpg" },
-  { src: "./RENDERS/EDIFICIO/e5.jpg" },
-  { src: "./RENDERS/EDIFICIO/e8.jpg" },
-  { src: "./RENDERS/EDIFICIO/e10.jpg" },
+  { src: "./RENDERS/EDIFICIO/e1.webp" },
+  { src: "./RENDERS/EDIFICIO/e4.webp" },
+  { src: "./RENDERS/EDIFICIO/e5.webp" },
+  { src: "./RENDERS/EDIFICIO/e8.webp" },
+  { src: "./RENDERS/EDIFICIO/e10.webp" },
 ];
 
 export default function InicioTrabajo() {

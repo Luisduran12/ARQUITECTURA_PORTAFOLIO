@@ -19,7 +19,7 @@ export default function InicioNosotros() {
       {/* Imagen de fondo difuminada */}
       {isMdOrLarger && (
         <Box
-          backgroundImage={"url(./RENDERS/EDIFICIO/e1.jpg)"}
+          backgroundImage={"url(./RENDERS/EDIFICIO/e1.webp)"}
           backgroundSize="cover"
           backgroundPosition="center"
           filter="blur(8px)"
@@ -44,7 +44,7 @@ export default function InicioNosotros() {
           justifyContent="center"
           alignItems="center"
         >
-          <Image loading="lazy" src="./RENDERS/EDIFICIO/e1.jpg"
+          <Image loading="lazy" src="./RENDERS/EDIFICIO/e1.webp"
             alt="Imagen de fondo"
             style={{
               width: "100%",
@@ -123,7 +123,7 @@ export default function InicioNosotros() {
       </Flex>
       {/* Imagen nítida en fondo para pantallas pequeñas */}
       {!isMdOrLarger && (
-        <Image loading="lazy" src="./RENDERS/EDIFICIO/e1.jpg"
+        <Image loading="lazy" src="./RENDERS/EDIFICIO/e1.webp"
           alt="Imagen de fondo"
           style={{
             width: "100%",

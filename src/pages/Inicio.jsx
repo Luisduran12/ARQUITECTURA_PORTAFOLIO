@@ -33,11 +33,11 @@ export default function Inicio() {
   const { t } = useTranslation();
   // Carrusel de imágenes
   const carouselImages = [
-    { src: "./RENDERS/COCINA_INTERIOR/ci1.jpg", text: t('carrusel.bienvenido') },
-    { src: "./RENDERS/HABITACION2/hb4.jpg", text: t('carrusel.visualizacion') },
-    { src: "./RENDERS/ZONA_TVs/zt2.png", text: t('carrusel.inspiracion') },
-    { src: "./RENDERS/EDIFICIO/e2.jpg", text: t('carrusel.transformacion') },
-    { src: "./RENDERS/BBQ/b2.jpg", text: t('carrusel.innovacion') },
+    { src: "./RENDERS/COCINA_INTERIOR/ci1.webp", text: t('carrusel.bienvenido') },
+    { src: "./RENDERS/HABITACION2/hb4.webp", text: t('carrusel.visualizacion') },
+    { src: "./RENDERS/ZONA_TVs/zt2.webp", text: t('carrusel.inspiracion') },
+    { src: "./RENDERS/EDIFICIO/e2.webp", text: t('carrusel.transformacion') },
+    { src: "./RENDERS/BBQ/b2.webp", text: t('carrusel.innovacion') },
   ];
 
   const serviciosRef = useRef(null);
@@ -53,19 +53,19 @@ export default function Inicio() {
 
   const serviciosData = [
     {
-      imagen: "./servicios/FotoRealista.png",
+      imagen: "./servicios/FotoRealista.webp",
       titulo: t('servicios.renderizado'),
     },
     {
-      imagen: "./servicios/TresD.png",
+      imagen: "./servicios/TresD.webp",
       titulo: t('servicios.animaciones'),
     },
     {
-      imagen: "./servicios/Virtuales.png",
+      imagen: "./servicios/Virtuales.webp",
       titulo: t('servicios.recorridos'),
     },
     {
-      imagen: "./servicios/Interiores.png",
+      imagen: "./servicios/Interiores.webp",
       titulo: t('servicios.visualizacion'),
     },
   ];

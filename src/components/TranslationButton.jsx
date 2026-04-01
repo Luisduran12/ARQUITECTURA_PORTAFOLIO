@@ -21,11 +21,11 @@ function TranslationButton() {
 
   const buttonStyles = {
     es: {
-      backgroundImage: "url(./publico/flag_es.png)",
+      backgroundImage: "url(./publico/flag_es.webp)",
       color: "white",
     },
     en: {
-      backgroundImage: "url(./publico/flag_us.png)",
+      backgroundImage: "url(./publico/flag_us.webp)",
       color: "white",
     },
   };

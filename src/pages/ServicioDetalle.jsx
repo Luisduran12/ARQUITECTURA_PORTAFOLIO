@@ -38,10 +38,10 @@ const ServicioDetalle = () => {
                 { paso: '04', titulo: 'Renderizado', desc: 'Procesamiento de alta calidad para un acabado fotorrealista.' }
             ],
             ejemplos: [
-                '/RENDERS/EDIFICIO/e1.jpg',
-                '/RENDERS/SALA/s1.jpg',
-                '/RENDERS/COCINA_INTERIOR/ci1.jpg',
-                '/RENDERS/HABITACION/h1.jpg'
+                '/RENDERS/EDIFICIO/e1.webp',
+                '/RENDERS/SALA/s1.webp',
+                '/RENDERS/COCINA_INTERIOR/ci1.webp',
+                '/RENDERS/HABITACION/h1.webp'
             ]
         },
         'foto-realista': {
@@ -55,10 +55,10 @@ const ServicioDetalle = () => {
                 { paso: '04', titulo: 'Post-Producción', desc: 'Ajustes finales para un resultado de nivel cinematográfico.' }
             ],
             ejemplos: [
-                '/RENDERS/ZONA_TVs/zt5.png',
-                '/RENDERS/FACHADA/f2.jpg',
-                '/RENDERS/BBQ/b3.jpg',
-                '/RENDERS/HABITACION2/hb4.jpg'
+                '/RENDERS/ZONA_TVs/zt5.webp',
+                '/RENDERS/FACHADA/f2.webp',
+                '/RENDERS/BBQ/b3.webp',
+                '/RENDERS/HABITACION2/hb4.webp'
             ]
         },
         'recorridos-virtuales': {
@@ -72,10 +72,10 @@ const ServicioDetalle = () => {
                 { paso: '04', titulo: 'Publicación', desc: 'Entregamos el recorrido accesible desde cualquier dispositivo.' }
             ],
             ejemplos: [
-                '/RENDERS/HABITACION/h6.jpg',
-                '/RENDERS/HABI_NIÑA/hn4.jpg',
-                '/RENDERS/SALA/s4.jpg',
-                '/RENDERS/COCINA_INTERIOR/ci5.jpg'
+                '/RENDERS/HABITACION/h6.webp',
+                '/RENDERS/HABI_NIÑA/hn4.webp',
+                '/RENDERS/SALA/s4.webp',
+                '/RENDERS/COCINA_INTERIOR/ci5.webp'
             ]
         },
         'visualizacion-interiores': {
@@ -89,10 +89,10 @@ const ServicioDetalle = () => {
                 { paso: '04', titulo: 'Render Final', desc: 'Imagen fotorrealista lista para presentar a tu cliente.' }
             ],
             ejemplos: [
-                '/RENDERS/COCINA_INTERIOR/ci1.jpg',
-                '/RENDERS/HABITACION/h6.jpg',
-                '/RENDERS/ZONA_TVs/zt5.png',
-                '/RENDERS/HABI_NIÑA/hn4.jpg'
+                '/RENDERS/COCINA_INTERIOR/ci1.webp',
+                '/RENDERS/HABITACION/h6.webp',
+                '/RENDERS/ZONA_TVs/zt5.webp',
+                '/RENDERS/HABI_NIÑA/hn4.webp'
             ]
         }
     };

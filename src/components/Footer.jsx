@@ -57,8 +57,8 @@ function Footer() {
             alignItems={"center"}
             justifyContent={"center"}
           >
-            <Image loading="lazy" src="./publico/VER_WHITE.png" alt="Logo" width="110px" />
-            <Image loading="lazy" src="./publico/LogoJulian.png" alt="Logo" width="110px" />
+            <Image loading="lazy" src="./publico/VER_WHITE.webp" alt="Logo" width="110px" />
+            <Image loading="lazy" src="./publico/LogoJulian.webp" alt="Logo" width="110px" />
           </GridItem>
           <GridItem height="100%" bg="white" />
           <GridItem
@@ -96,12 +96,12 @@ function Footer() {
       ) : (
         <Flex direction="column" alignItems="center" width="100%">
           <Flex>
-            <Image loading="lazy" src="./publico/VER_WHITE.png"
+            <Image loading="lazy" src="./publico/VER_WHITE.webp"
               alt="Logo"
               width="100px"
               mb="24px"
             />
-            <Image loading="lazy" src="./publico/LogoJulian.png"
+            <Image loading="lazy" src="./publico/LogoJulian.webp"
               alt="Logo"
               width="100px"
               mb="24px"

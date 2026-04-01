@@ -26,19 +26,19 @@ export default function Nosotros() {
   const { t } = useTranslation();
   const serviciosData = [
     {
-      imagen: "./servicios/FotoRealista.png",
+      imagen: "./servicios/FotoRealista.webp",
       titulo: t("servicios.renderizado"),
     },
     {
-      imagen: "./servicios/TresD.png",
+      imagen: "./servicios/TresD.webp",
       titulo: t("servicios.animaciones"),
     },
     {
-      imagen: "./servicios/Virtuales.png",
+      imagen: "./servicios/Virtuales.webp",
       titulo: t("servicios.recorridos"),
     },
     {
-      imagen: "./servicios/Interiores.png",
+      imagen: "./servicios/Interiores.webp",
       titulo: t("servicios.visualizacion"),
     },
   ];
@@ -62,7 +62,7 @@ export default function Nosotros() {
         position="relative"
         p="30px"
       >
-        <Image loading="lazy" src="./RENDERS/ZONA_TVs/zt1.png"
+        <Image loading="lazy" src="./RENDERS/ZONA_TVs/zt1.webp"
           alt="Fondo"
           position="absolute"
           top="0"
@@ -161,7 +161,7 @@ export default function Nosotros() {
                     alignItems="center"
                   >
                     <Image loading="lazy" className="image image-animate image-1"
-                      src="./motores/D5R.png"
+                      src="./motores/D5R.webp"
                       alt="Logo"
                       w="130px"
                     />
@@ -175,7 +175,7 @@ export default function Nosotros() {
                     alignItems="center"
                   >
                     <Image loading="lazy" className="image image-animate image-2"
-                      src="./motores/ENSCAPE.png"
+                      src="./motores/ENSCAPE.webp"
                       alt="Logo"
                       w="120px"
                     />
@@ -189,7 +189,7 @@ export default function Nosotros() {
                     alignItems="center"
                   >
                     <Image loading="lazy" className="image image-animate image-3"
-                      src="./motores/LUMION.png"
+                      src="./motores/LUMION.webp"
                       alt="Logo"
                       w="60px"
                     />
@@ -203,7 +203,7 @@ export default function Nosotros() {
                     alignItems="center"
                   >
                     <Image loading="lazy" className="image image-animate image-4"
-                      src="./motores/TWIMO.png"
+                      src="./motores/TWIMO.webp"
                       alt="Logo"
                       w="130px"
                     />
@@ -217,7 +217,7 @@ export default function Nosotros() {
                     alignItems="center"
                   >
                     <Image loading="lazy" className="image image-animate image-5"
-                      src="./motores/VRAY.png"
+                      src="./motores/VRAY.webp"
                       alt="Logo"
                       w="110px"
                     />
@@ -233,7 +233,7 @@ export default function Nosotros() {
                     alignItems="center"
                   >
                     <Image loading="lazy" className="image image-animate image-1"
-                      src="./motores/D5R.png"
+                      src="./motores/D5R.webp"
                       alt="Logo"
                       w="130px"
                     />
@@ -248,7 +248,7 @@ export default function Nosotros() {
                     alignItems="center"
                   >
                     <Image loading="lazy" className="image image-animate image-2"
-                      src="./motores/ENSCAPE.png"
+                      src="./motores/ENSCAPE.webp"
                       alt="Logo"
                       w="120px"
                     />
@@ -261,7 +261,7 @@ export default function Nosotros() {
                     alignItems="center"
                   >
                     <Image loading="lazy" className="image image-animate image-3"
-                      src="./motores/LUMION.png"
+                      src="./motores/LUMION.webp"
                       alt="Logo"
                       w={["40px", "65px"]}
                     />
@@ -276,7 +276,7 @@ export default function Nosotros() {
                     alignItems="center"
                   >
                     <Image loading="lazy" className="image image-animate image-4"
-                      src="./motores/TWIMO.png"
+                      src="./motores/TWIMO.webp"
                       alt="Logo"
                       w="130px"
                     />
@@ -289,7 +289,7 @@ export default function Nosotros() {
                     alignItems="center"
                   >
                     <Image loading="lazy" className="image image-animate image-5"
-                      src="./motores/VRAY.png"
+                      src="./motores/VRAY.webp"
                       alt="Logo"
                       w="110px"
                     />
@@ -338,7 +338,7 @@ export default function Nosotros() {
       // textAlign="center" // Centra el texto dentro de los boxes
       >
         <Box flex="1" boxShadow="md" p={4} m={10} textAlign="center">
-          <Image loading="lazy" src="./publico/PerfilFernando.jpg"
+          <Image loading="lazy" src="./publico/PerfilFernando.webp"
             borderRadius="md"
             mb="40px"
             objectFit="contain"
@@ -346,7 +346,7 @@ export default function Nosotros() {
             height="170px" // Asegura la misma altura para ambas imágenes
             mx="auto"
             className="service-image"
-            onClick={() => handleClickImage("./publico/PerfilFernando.jpg")}
+            onClick={() => handleClickImage("./publico/PerfilFernando.webp")}
           />
           <Text display={"flex"} alignItems={"center"} color={"white"}>
             <FaUserCircle style={{ marginRight: "8px" }} />
@@ -367,7 +367,7 @@ export default function Nosotros() {
           </Text>
         </Box>
         <Box flex="1" boxShadow="md" p={4} m={10} textAlign="center">
-          <Image loading="lazy" src="./publico/PerfilJulian.jpeg"
+          <Image loading="lazy" src="./publico/PerfilJulian.webp"
             borderRadius="md"
             mb="40px"
             objectFit="contain"
@@ -375,7 +375,7 @@ export default function Nosotros() {
             height="170px" // Asegura la misma altura para ambas imágenes
             mx="auto"
             className="service-image"
-            onClick={() => handleClickImage("./publico/PerfilJulian.jpeg")}
+            onClick={() => handleClickImage("./publico/PerfilJulian.webp")}
           />
           <Text display={"flex"} alignItems={"center"} color={"white"}>
             <FaUserCircle style={{ marginRight: "8px" }} />

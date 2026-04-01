@@ -195,7 +195,7 @@ const WelcomeCover = ({ onEnter }) => {
         <video
           className="welcome-video"
           src="/videos/mi_portada.mp4"
-          poster="/RENDERS/EDIFICIO/e2.jpg" // Imagen de pre-carga
+          poster="/RENDERS/EDIFICIO/e2.webp" // Imagen de pre-carga
           autoPlay
           loop
           muted
@@ -210,7 +210,7 @@ const WelcomeCover = ({ onEnter }) => {
 
         {/* Logo superior izquierdo */}
         <div className="welcome-logo">
-          <img loading="lazy" src="/publico/HOR_WHITE.png" alt="Logo SWAG Arquitectos" />
+          <img loading="lazy" src="/publico/HOR_WHITE.webp" alt="Logo SWAG Arquitectos" />
         </div>
 
         {/* Centro */}
