@@ -6,11 +6,22 @@ const WelcomeCover = ({ onEnter }) => {
   const [exiting, setExiting] = useState(false);
   const curtainRef = useRef(null);
 
+  // Precarga especulativa: Descargamos el código de la página de Inicio 
+  // mientras el usuario aún está viendo la portada.
+  useEffect(() => {
+    const prefetchInicio = () => import("../pages/Inicio");
+    // Iniciamos la descarga tras un breve delay para no competir con el video/logo
+    const timer = setTimeout(prefetchInicio, 1500);
+    return () => clearTimeout(timer);
+  }, []);
+
   const handleEnter = () => {
     setExiting(true);
+    // Reducimos ligeramente el delay para que se sienta más responsivo
+    // pero manteniendo tiempo suficiente para la animación de la cortina
     setTimeout(() => {
       onEnter();
-    }, 900);
+    }, 850);
   };
 
   return (
