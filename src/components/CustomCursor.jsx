@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef, memo } from 'react';
 import { Box } from '@chakra-ui/react';
 import { motion, useSpring } from 'framer-motion';
 
-const CustomCursor = () => {
+const CustomCursor = memo(() => {
     const [isHovering, setIsHovering] = useState(false);
     const [isVisible, setIsVisible] = useState(false);
+    const isVisibleRef = useRef(false);
 
     // Springs para movimiento suave
     const cursorX = useSpring(0, { damping: 20, stiffness: 250 });
@@ -14,32 +15,35 @@ const CustomCursor = () => {
         const moveCursor = (e) => {
             cursorX.set(e.clientX);
             cursorY.set(e.clientY);
-            if (!isVisible) setIsVisible(true);
+            if (!isVisibleRef.current) {
+                setIsVisible(true);
+                isVisibleRef.current = true;
+            }
         };
 
         const handleHoverStart = (e) => {
             const target = e.target;
-            if (
+            if (!target) return;
+
+            const isClickable =
                 target.tagName === 'A' ||
                 target.tagName === 'BUTTON' ||
                 target.closest('button') ||
                 target.getAttribute('role') === 'button' ||
-                target.tagName === 'SELECT'
-            ) {
-                setIsHovering(true);
-            } else {
-                setIsHovering(false);
-            }
+                target.tagName === 'SELECT' ||
+                target.style.cursor === 'pointer';
+
+            setIsHovering(!!isClickable);
         };
 
-        window.addEventListener('mousemove', moveCursor);
-        window.addEventListener('mouseover', handleHoverStart);
+        window.addEventListener('mousemove', moveCursor, { passive: true });
+        window.addEventListener('mouseover', handleHoverStart, { passive: true });
 
         return () => {
             window.removeEventListener('mousemove', moveCursor);
             window.removeEventListener('mouseover', handleHoverStart);
         };
-    }, [cursorX, cursorY, isVisible]);
+    }, [cursorX, cursorY]);
 
     if (!isVisible) return null;
 

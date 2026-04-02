@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, memo } from 'react';
 import { Box, Flex, Text, VStack } from '@chakra-ui/react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const Preloader = ({ onComplete }) => {
+const sequences = [
+    "ESTABLISHING SECURE CONNECTION...",
+    "GEOLOCATING ASSETS...",
+    "SYNCING INTERFACE...",
+    "SYSTEM READY."
+];
+
+const Preloader = memo(({ onComplete }) => {
     const [logs, setLogs] = useState([]);
     const [progress, setProgress] = useState(0);
-
-    const sequences = [
-        "ESTABLISHING SECURE CONNECTION...",
-        "GEOLOCATING ASSETS...",
-        "SYNCING INTERFACE...",
-        "SYSTEM READY."
-    ];
 
     useEffect(() => {
         let currentLog = 0;
@@ -22,16 +22,16 @@ const Preloader = ({ onComplete }) => {
             } else {
                 clearInterval(logInterval);
             }
-        }, 400); // Más rápido (400ms)
+        }, 400);
 
         const progInterval = setInterval(() => {
             setProgress(prev => {
                 if (prev >= 100) {
                     clearInterval(progInterval);
-                    setTimeout(() => onComplete(), 500); // Salida automática al llegar a 100
+                    setTimeout(() => onComplete(), 500);
                     return 100;
                 }
-                return prev + 5; // Más rápido (+5%)
+                return prev + 5;
             });
         }, 30);
 

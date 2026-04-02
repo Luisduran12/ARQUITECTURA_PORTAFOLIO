@@ -297,8 +297,7 @@ export default function Nosotros() {
         <Box flex="1" boxShadow="md" p={4} m={10} textAlign="center">
           <OptimizedImage
             src={cloudUrl('public/publico/PerfilFernando.webp', { w: 600 })}
-            alt="Fernando Patiño"
-            alt="Perfil Fernando Guerrero"
+            alt="Profil Fernando Guerrero"
             borderRadius="md"
             mb="40px"
             width="170px"
@@ -328,7 +327,6 @@ export default function Nosotros() {
         <Box flex="1" boxShadow="md" p={4} m={10} textAlign="center">
           <OptimizedImage
             src={cloudUrl('public/publico/PerfilJulian.webp', { w: 600 })}
-            alt="Julián Durán"
             alt="Perfil Julian Chaves"
             borderRadius="md"
             mb="40px"

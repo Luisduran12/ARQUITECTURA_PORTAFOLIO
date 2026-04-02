@@ -22,11 +22,11 @@ const BASE_URL = `https://res.cloudinary.com/${CLOUD_NAME}`;
 // ─────────────────────────────────────────────────────────────────────────────
 export function cloudUrl(keyOrUrl, opts = {}) {
     const {
-        w = 'auto',
+        w = null, // Default to null, let caller or CSS define width
         q = 'auto:best',
         f = 'auto',
         dpr = 'auto',
-        extra = '',   // any additional Cloudinary transformation string
+        extra = '',
     } = opts;
 
     // If the caller already has a full Cloudinary URL, inject transforms
@@ -41,16 +41,27 @@ export function cloudUrl(keyOrUrl, opts = {}) {
     }
 
     const transforms = [
-        f !== false ? `f_${f}` : '',
-        q !== false ? `q_${q}` : '',
-        w !== false && w !== 'auto' ? `w_${w}` : '',
-        dpr !== false && dpr !== 'auto' ? `dpr_${dpr}` : '',
+        f ? `f_${f}` : '',
+        q ? `q_${q}` : '',
+        (w && w !== 'auto') ? `w_${w}` : '',
+        dpr ? `dpr_${dpr}` : '',
         extra,
     ]
         .filter(Boolean)
         .join(',');
 
-    return raw.replace('/upload/', `/upload/${transforms}/`);
+    // If transforms is empty, return the raw URL as is
+    if (!transforms) return raw;
+
+    // Prevent double /upload/ injection
+    if (raw.includes('/upload/')) {
+        const parts = raw.split('/upload/');
+        // If there's already some transformation, we might need a more complex merge,
+        // but for now, let's just make sure we don't duplicate /upload/
+        return `${parts[0]}/upload/${transforms}/${parts[1]}`;
+    }
+
+    return raw;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────

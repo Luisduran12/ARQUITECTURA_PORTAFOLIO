@@ -1,13 +1,11 @@
-// src/components/StatsSection.jsx
-// Sección de logros con contadores animados al entrar al viewport
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, memo } from "react";
 import { Box, Flex, Text, Heading } from "@chakra-ui/react";
 import { motion, useInView, animate } from "framer-motion";
 
 // ─────────────────────────────────
 // Contador numérico animado
 // ─────────────────────────────────
-const AnimatedCounter = ({ target, suffix = "", duration = 1.8 }) => {
+const AnimatedCounter = memo(({ target, suffix = "", duration = 1.8 }) => {
     const [display, setDisplay] = useState(0);
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-80px" });
@@ -34,7 +32,7 @@ const AnimatedCounter = ({ target, suffix = "", duration = 1.8 }) => {
             {display}{suffix}
         </Text>
     );
-};
+});
 
 // ─────────────────────────────────
 // Componente principal
@@ -125,4 +123,4 @@ const StatsSection = () => {
     );
 };
 
-export default StatsSection;
+export default memo(StatsSection);
