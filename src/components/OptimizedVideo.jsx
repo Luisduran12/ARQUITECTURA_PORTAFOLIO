@@ -97,7 +97,7 @@ const OptimizedVideo = ({
                     muted={muted}
                     controls={controls}
                     playsInline
-                    preload="metadata"
+                    preload="auto"
                     style={{
                         width: "100%",
                         height: "100%",
