@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Box } from "@chakra-ui/react";
 import OptimizedImage from "./OptimizedImage";
 import OptimizedVideo from "./OptimizedVideo";
 import { cloudVideo, cloudUrl } from "../utils/cloudinary";
