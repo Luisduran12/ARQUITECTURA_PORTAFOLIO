@@ -27,6 +27,15 @@ import OptimizedImage from "./OptimizedImage";
 // Imágenes locales como fallback si Cloudinary no responde
 // ─────────────────────────────────────────────────────────
 const carpetaImagesFallback = {
+  CHINACOTA: [
+    { src: "/RENDERS/CHINACOTA/1.png" },
+    { src: "/RENDERS/CHINACOTA/2.png" },
+    { src: "/RENDERS/CHINACOTA/3.png" },
+    { src: "/RENDERS/CHINACOTA/4.png" },
+    { src: "/RENDERS/CHINACOTA/5.png" },
+    { src: "/RENDERS/CHINACOTA/6.png" },
+    { src: "/RENDERS/CHINACOTA/7.png" },
+  ],
   COCINA_INTERIOR: [
     { src: "/RENDERS/COCINA_INTERIOR/ci1.webp" },
     { src: "/RENDERS/COCINA_INTERIOR/ci5.webp" },
@@ -46,7 +55,7 @@ const carpetaImagesFallback = {
     { src: "/RENDERS/EDIFICIO/e4.webp" },
     { src: "/RENDERS/EDIFICIO/e5.webp" },
     { src: "/RENDERS/EDIFICIO/e6.webp" },
-    ],
+  ],
   FACHADA: [
     { src: "/RENDERS/FACHADA/f2.webp" },
     { src: "/RENDERS/FACHADA/f1.webp" },

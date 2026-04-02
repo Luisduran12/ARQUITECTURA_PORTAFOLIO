@@ -966,5 +966,61 @@
     "version": 1775098259,
     "is_video": false,
     "hls": null
+  },
+  "public/RENDERS/CHINACOTA/1.png": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775099830/1_tlbla3.png",
+    "public_id": "1_tlbla3",
+    "format": "png",
+    "version": 1775099830,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/CHINACOTA/2.png": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775099832/2_fyzyjf.png",
+    "public_id": "2_fyzyjf",
+    "format": "png",
+    "version": 1775099832,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/CHINACOTA/3.png": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775099835/3_vmornm.png",
+    "public_id": "3_vmornm",
+    "format": "png",
+    "version": 1775099835,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/CHINACOTA/4.png": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775099838/4_d0e89j.png",
+    "public_id": "4_d0e89j",
+    "format": "png",
+    "version": 1775099838,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/CHINACOTA/5.png": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775099841/5_aypt4q.png",
+    "public_id": "5_aypt4q",
+    "format": "png",
+    "version": 1775099841,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/CHINACOTA/6.png": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775099844/6_vctnpe.png",
+    "public_id": "6_vctnpe",
+    "format": "png",
+    "version": 1775099844,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/CHINACOTA/7.png": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775099846/7_dsvujm.png",
+    "public_id": "7_dsvujm",
+    "format": "png",
+    "version": 1775099846,
+    "is_video": false,
+    "hls": null
   }
 }

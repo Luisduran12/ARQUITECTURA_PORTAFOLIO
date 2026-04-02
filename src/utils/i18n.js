@@ -86,6 +86,7 @@ const resources = {
         fachadas: "FACHADAS",
         zona_social: "ZONA SOCIAL",
         interiorismo: "INTERIORISMO",
+        cabana_chinacota: "CABAÑA CHINACOTA",
       },
       /* CARPETA IMAGENES */
       carpetaImagen: {
@@ -196,6 +197,7 @@ const resources = {
         fachadas: "FACADES",
         zona_social: "SOCIAL AREA",
         interiorismo: "INTERIOR DESIGN",
+        cabana_chinacota: "CHINACOTA CABIN",
       },
       carpetaImagen: {
         volver: "Back to portfolio",

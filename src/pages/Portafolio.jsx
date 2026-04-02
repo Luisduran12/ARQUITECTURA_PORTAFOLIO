@@ -15,6 +15,7 @@ const Portfolio = () => {
   const { t } = useTranslation();
 
   const imagePaths = [
+    { src: 'public/RENDERS/CHINACOTA/1.png', titulo: t("portafolio.cabana_chinacota"), sub: "Cabaña de descanso · 2024", carpeta: "CHINACOTA" },
     { src: 'public/RENDERS/INTERIORISMO/1_vruuqi.jpg', titulo: t("portafolio.interiorismo"), sub: "Propuesta de Interiorismo · 2024", carpeta: "INTERIORISMO" },
     { src: 'public/RENDERS/HABITACION PRINCIPAL/1_cgfhc7.jpg', titulo: t("portafolio.habitacion_principal"), sub: "Habitación Principal · 2024", carpeta: "HABITACION PRINCIPAL" },
     { src: 'public/RENDERS/INTERIOR ARBNB/1_o5xdk9.jpg', titulo: t("portafolio.interior_airbnb"), sub: "Airbnb Studio · 2024", carpeta: "INTERIOR ARBNB" },
