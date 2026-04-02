@@ -99,19 +99,26 @@ export function cloudBg(key, opts = {}) {
 // ─────────────────────────────────────────────────────────────────────────────
 // cloudVideo — Returns the HLS or MP4 URL for a video asset
 // ─────────────────────────────────────────────────────────────────────────────
-export function cloudVideo(key) {
+export function cloudVideo(key, opts = {}) {
     const entry = assetMap[key];
     if (!entry) {
         console.warn(`[cloudinary] No video entry found for key: "${key}"`);
         return { hls: null, mp4: null, poster: null };
     }
-    const mp4Optimized = entry.url?.replace('/upload/', '/upload/f_auto,q_auto,vc_auto/');
+
+    const { w = 1920, q = 'auto:best' } = opts;
+
+    // mp4 version: auto format, high quality, auto codec
+    const mp4Optimized = entry.url?.replace('/upload/', `/upload/f_auto,q_${q},vc_auto,w_${w}/`);
+
+    // Poster: First frame (so_0), auto format, high quality, high res
     const poster = entry.url
         ? entry.url
             .replace('/video/', '/image/')
             .replace(/\.[^.]+$/, '.webp')
-            .replace('/upload/', '/upload/f_auto,q_auto,so_0/')
+            .replace('/upload/', `/upload/f_auto,q_${q},so_0,w_${w}/`)
         : null;
+
     return {
         hls: entry.hls || null,
         mp4: mp4Optimized || entry.url,

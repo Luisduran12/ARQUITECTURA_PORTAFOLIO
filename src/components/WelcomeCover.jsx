@@ -215,6 +215,7 @@ const WelcomeCover = ({ onEnter }) => {
           muted
           borderRadius="0"
           aspectRatio="none"
+          priority
         />
 
         {/* Overlay oscuro */}

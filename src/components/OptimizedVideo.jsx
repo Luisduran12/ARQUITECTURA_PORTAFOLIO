@@ -21,16 +21,19 @@ const OptimizedVideo = ({
     loop = true,
     muted = true,
     borderRadius = "xl",
+    priority = false, // If true, starts loading immediately without waiting for observer
+    quality = 'auto:best',
+    width = 1920,
     ...props
 }) => {
-    const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(priority);
     const [isLoaded, setIsLoaded] = useState(false);
     const videoRef = useRef(null);
     const containerRef = useRef(null);
 
     // Resolve video sources through helper if key is given
     const resolved = src && !src.startsWith("http")
-        ? cloudVideo(src)
+        ? cloudVideo(src, { w: width, q: quality })
         : { hls: src?.endsWith(".m3u8") ? src : null, mp4: src, poster: null };
 
     const hlsSrc = resolved.hls;
@@ -39,13 +42,15 @@ const OptimizedVideo = ({
 
     // 1. IntersectionObserver — lazy load the video element itself
     useEffect(() => {
+        if (priority) return; // Skip observer if priority is set
+
         const observer = new IntersectionObserver(
             ([entry]) => setIsVisible(entry.isIntersecting),
             { threshold: 0.1 }
         );
         if (containerRef.current) observer.observe(containerRef.current);
         return () => observer.disconnect();
-    }, []);
+    }, [priority]);
 
     // 2. Play / pause based on visibility
     const tryPlay = useCallback(() => {
