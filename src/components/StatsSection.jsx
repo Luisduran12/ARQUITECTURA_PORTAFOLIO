@@ -39,7 +39,7 @@ const AnimatedCounter = memo(({ target, suffix = "", duration = 1.8 }) => {
 // ─────────────────────────────────
 const stats = [
     { target: 50, suffix: "+", label: "Proyectos Realizados", desc: "Residenciales, comerciales y urbanos" },
-    { target: 5, suffix: "+", label: "Años de Experiencia", desc: "Visualizando arquitectura premium" },
+    { target: 15, suffix: "+", label: "Años de Experiencia", desc: "Visualizando arquitectura premium" },
     { target: 100, suffix: "%", label: "Clientes Satisfechos", desc: "Calidad que habla por sí sola" },
 ];
 

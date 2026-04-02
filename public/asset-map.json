@@ -910,5 +910,37 @@
     "version": 1775094850,
     "is_video": false,
     "hls": null
+  },
+  "public/CAMBIOS/15_a5ejhf.jpg": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775097532/15_a5ejhf.jpg",
+    "public_id": "15_a5ejhf",
+    "format": "jpg",
+    "version": 1775097532,
+    "is_video": false,
+    "hls": null
+  },
+  "public/CAMBIOS/12_dot66p.jpg": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775097529/12_dot66p.jpg",
+    "public_id": "12_dot66p",
+    "format": "jpg",
+    "version": 1775097529,
+    "is_video": false,
+    "hls": null
+  },
+  "public/CAMBIOS/4_erijcl.jpg": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775097529/4_erijcl.jpg",
+    "public_id": "4_erijcl",
+    "format": "jpg",
+    "version": 1775097529,
+    "is_video": false,
+    "hls": null
+  },
+  "public/CAMBIOS/9_xuptyn.jpg": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775097529/9_xuptyn.jpg",
+    "public_id": "9_xuptyn",
+    "format": "jpg",
+    "version": 1775097529,
+    "is_video": false,
+    "hls": null
   }
 }

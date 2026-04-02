@@ -35,10 +35,10 @@ export default function Inicio() {
   // Carrusel de imágenes
   const carouselImages = [
     { src: cloudUrl('public/RENDERS/COCINA_INTERIOR/ci1.webp', { w: 1920 }), text: t('carrusel.bienvenido') },
-    { src: cloudUrl('public/RENDERS/HABITACION2/hb4.webp', { w: 1920 }), text: t('carrusel.visualizacion') },
-    { src: cloudUrl('public/RENDERS/ZONA_TVs/zt2.webp', { w: 1920 }), text: t('carrusel.inspiracion') },
-    { src: cloudUrl('public/RENDERS/EDIFICIO/e2.webp', { w: 1920 }), text: t('carrusel.transformacion') },
-    { src: cloudUrl('public/RENDERS/BBQ/b2.webp', { w: 1920 }), text: t('carrusel.innovacion') },
+    { src: cloudUrl('public/CAMBIOS/15_a5ejhf.jpg', { w: 1920 }), text: t('carrusel.visualizacion') },
+    { src: cloudUrl('public/CAMBIOS/12_dot66p.jpg', { w: 1920 }), text: t('carrusel.inspiracion') },
+    { src: cloudUrl('public/CAMBIOS/4_erijcl.jpg', { w: 1920 }), text: t('carrusel.transformacion') },
+    { src: cloudUrl('public/CAMBIOS/9_xuptyn.jpg', { w: 1920 }), text: t('carrusel.innovacion') },
   ];
 
   const serviciosRef = useRef(null);
