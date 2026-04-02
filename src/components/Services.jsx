@@ -83,8 +83,8 @@ const Services = ({ servicios }) => {
           key={activeVideo}
           src={activeVideo}
           autoPlay
-          controls
-          muted={false}
+          loop
+          muted={true}
           width={1920}
           borderRadius="0" // Edge to edge feel
           aspectRatio={["16/9", "21/9"]} // Cinematic wide on desktop

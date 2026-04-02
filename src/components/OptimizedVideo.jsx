@@ -104,6 +104,7 @@ const OptimizedVideo = ({
                         objectFit: "cover",
                         opacity: isLoaded ? 1 : 0.3,
                         transition: "opacity 0.8s ease",
+                        pointerEvents: controls ? "auto" : "none",
                     }}
                 >
                     {/* HLS for Safari + modern browsers */}
