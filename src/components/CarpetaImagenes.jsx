@@ -29,6 +29,9 @@ import OptimizedImage from "./OptimizedImage";
 const carpetaImagesFallback = {
   FACHADA_R3: [
     { src: "/RENDERS/FACHADA_R3/1.png" },
+    { src: "/RENDERS/FACHADA_R3/2.png" },
+    { src: "/RENDERS/FACHADA_R3/3.png" },
+    { src: "/RENDERS/FACHADA_R3/4.png" },
   ],
   CHINACOTA: [
     { src: "/RENDERS/CHINACOTA/1.png" },

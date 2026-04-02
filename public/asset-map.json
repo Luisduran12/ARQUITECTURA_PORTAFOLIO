@@ -1030,5 +1030,29 @@
     "version": 1775100228,
     "is_video": false,
     "hls": null
+  },
+  "public/RENDERS/FACHADA_R3/2.png": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775100774/2_xocvxy.png",
+    "public_id": "2_xocvxy",
+    "format": "png",
+    "version": 1775100774,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/FACHADA_R3/3.png": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775100777/3_tthfnp.png",
+    "public_id": "3_tthfnp",
+    "format": "png",
+    "version": 1775100777,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/FACHADA_R3/4.png": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775100780/4_s7shup.png",
+    "public_id": "4_s7shup",
+    "format": "png",
+    "version": 1775100780,
+    "is_video": false,
+    "hls": null
   }
 }
