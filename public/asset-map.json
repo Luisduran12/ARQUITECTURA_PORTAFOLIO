@@ -1022,5 +1022,13 @@
     "version": 1775099846,
     "is_video": false,
     "hls": null
+  },
+  "public/RENDERS/FACHADA_R3/1.png": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775100228/1_fxxbts.png",
+    "public_id": "1_fxxbts",
+    "format": "png",
+    "version": 1775100228,
+    "is_video": false,
+    "hls": null
   }
 }

@@ -27,6 +27,9 @@ import OptimizedImage from "./OptimizedImage";
 // Imágenes locales como fallback si Cloudinary no responde
 // ─────────────────────────────────────────────────────────
 const carpetaImagesFallback = {
+  FACHADA_R3: [
+    { src: "/RENDERS/FACHADA_R3/1.png" },
+  ],
   CHINACOTA: [
     { src: "/RENDERS/CHINACOTA/1.png" },
     { src: "/RENDERS/CHINACOTA/2.png" },
