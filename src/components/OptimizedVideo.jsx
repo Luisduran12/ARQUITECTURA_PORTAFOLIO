@@ -24,6 +24,7 @@ const OptimizedVideo = ({
     priority = false, // If true, starts loading immediately without waiting for observer
     quality = 'auto:best',
     width = 1920,
+    controls = false, // New prop to show native video controls
     ...props
 }) => {
     const [isVisible, setIsVisible] = useState(priority);
@@ -94,6 +95,7 @@ const OptimizedVideo = ({
                     autoPlay={autoPlay}
                     loop={loop}
                     muted={muted}
+                    controls={controls}
                     playsInline
                     preload="metadata"
                     style={{
