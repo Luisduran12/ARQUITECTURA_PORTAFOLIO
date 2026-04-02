@@ -102,8 +102,7 @@ const OptimizedVideo = ({
                         width: "100%",
                         height: "100%",
                         objectFit: "cover",
-                        opacity: isLoaded ? 1 : 0.3,
-                        transition: "opacity 0.8s ease",
+                        opacity: 1,
                         pointerEvents: controls ? "auto" : "none",
                     }}
                 >
