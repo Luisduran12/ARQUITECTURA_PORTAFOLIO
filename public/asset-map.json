@@ -943,7 +943,7 @@
     "is_video": false,
     "hls": null
   },
-  "public/RENDERS/EDIFICIO/e12.png": {
+  "public/RENDERS/FACHADAS/5.png": {
     "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775098261/IMG_0033_uj65bb.png",
     "public_id": "IMG_0033_uj65bb",
     "format": "png",
@@ -951,7 +951,7 @@
     "is_video": false,
     "hls": null
   },
-  "public/RENDERS/EDIFICIO/e13.png": {
+  "public/RENDERS/FACHADAS/6.png": {
     "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775098260/IMG_0030_nqncjb.png",
     "public_id": "IMG_0030_nqncjb",
     "format": "png",
@@ -959,7 +959,7 @@
     "is_video": false,
     "hls": null
   },
-  "public/RENDERS/EDIFICIO/e14.png": {
+  "public/RENDERS/FACHADAS/7.png": {
     "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775098259/IMG_0031_wz7dfa.png",
     "public_id": "IMG_0031_wz7dfa",
     "format": "png",

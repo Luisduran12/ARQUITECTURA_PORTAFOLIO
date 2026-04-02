@@ -46,13 +46,19 @@ const carpetaImagesFallback = {
     { src: "/RENDERS/EDIFICIO/e4.webp" },
     { src: "/RENDERS/EDIFICIO/e5.webp" },
     { src: "/RENDERS/EDIFICIO/e6.webp" },
-    { src: "/RENDERS/EDIFICIO/e12.png" },
-    { src: "/RENDERS/EDIFICIO/e13.png" },
-    { src: "/RENDERS/EDIFICIO/e14.png" },
-  ],
+    ],
   FACHADA: [
     { src: "/RENDERS/FACHADA/f2.webp" },
     { src: "/RENDERS/FACHADA/f1.webp" },
+  ],
+  FACHADAS: [
+    { src: "/RENDERS/FACHADAS/1_i8nkng.jpg" },
+    { src: "/RENDERS/FACHADAS/2_pniwpj.jpg" },
+    { src: "/RENDERS/FACHADAS/3_ia9yea.jpg" },
+    { src: "/RENDERS/FACHADAS/4_app3b8.jpg" },
+    { src: "/RENDERS/FACHADAS/5.png" },
+    { src: "/RENDERS/FACHADAS/6.png" },
+    { src: "/RENDERS/FACHADAS/7.png" },
   ],
   HABITACION_NINA: [
     { src: "/RENDERS/HABITACION_NINA/hn4.webp" },
