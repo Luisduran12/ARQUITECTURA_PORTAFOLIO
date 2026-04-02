@@ -624,12 +624,12 @@
     "hls": null
   },
   "public/videos/animaciones3d.mp4": {
-    "url": "https://res.cloudinary.com/dibjbl4zp/video/upload/v1775087236/arquitectura_premium/public/videos/animaciones3d.mp4",
+    "url": "https://res.cloudinary.com/dibjbl4zp/video/upload/v1775090556/arquitectura_premium/public/videos/animaciones3d.mp4",
     "public_id": "arquitectura_premium/public/videos/animaciones3d",
     "format": "mp4",
-    "version": 1775087236,
+    "version": 1775090556,
     "is_video": true,
-    "hls": "https://res.cloudinary.com/dibjbl4zp/video/upload/sp_full_hd/v1775087236/arquitectura_premium/public/videos/animaciones3d.m3u8"
+    "hls": "https://res.cloudinary.com/dibjbl4zp/video/upload/sp_full_hd/v1775090556/arquitectura_premium/public/videos/animaciones3d.m3u8"
   },
   "public/videos/mi_portada.mp4": {
     "url": "https://res.cloudinary.com/dibjbl4zp/video/upload/v1775087247/arquitectura_premium/public/videos/mi_portada.mp4",
