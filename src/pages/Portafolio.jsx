@@ -15,6 +15,9 @@ const Portfolio = () => {
   const { t } = useTranslation();
 
   const imagePaths = [
+    { src: 'public/RENDERS/INTERIOR ARBNB/1_o5xdk9.jpg', titulo: t("portafolio.interior_airbnb"), sub: "Airbnb Studio · 2024", carpeta: "INTERIOR ARBNB" },
+    { src: 'public/RENDERS/FACHADAS/1_i8nkng.jpg', titulo: t("portafolio.fachadas"), sub: "Diseño Exterior · 2024", carpeta: "FACHADAS" },
+    { src: 'public/RENDERS/ZONA SOCIAL/1_hxga0h.jpg', titulo: t("portafolio.zona_social"), sub: "Área Social · 2024", carpeta: "ZONA SOCIAL" },
     { src: 'public/RENDERS/EDIFICIO/e10.webp', titulo: t("portafolio.edificio_ceiba_central"), sub: "Edificio Institucional · 2024", carpeta: "EDIFICIO" },
     { src: 'public/RENDERS/ING_ECU/ie3.webp', titulo: t("portafolio.casa_rg"), sub: "Residencial · 2024", carpeta: "ING_ECU" },
     { src: 'public/RENDERS/HABITACION_NINA/hn4.webp', titulo: t("portafolio.habitacion_nina"), sub: "Diseño Interior · 2024", carpeta: "HABITACION_NINA" },

@@ -82,6 +82,9 @@ const resources = {
         zona_tv: "ZONA TV",
         sala: "SALA",
         zona_bbq: "ZONA BBQ",
+        interior_airbnb: "INTERIOR ARBNB",
+        fachadas: "FACHADAS",
+        zona_social: "ZONA SOCIAL",
       },
       /* CARPETA IMAGENES */
       carpetaImagen: {
@@ -188,6 +191,9 @@ const resources = {
         zona_tv: "TV AREA",
         sala: "LIVING ROOM",
         zona_bbq: "BBQ AREA",
+        interior_airbnb: "INTERIOR ARBNB",
+        fachadas: "FACADES",
+        zona_social: "SOCIAL AREA",
       },
       carpetaImagen: {
         volver: "Back to portfolio",
