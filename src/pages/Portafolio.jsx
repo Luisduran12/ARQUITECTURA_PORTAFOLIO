@@ -3,11 +3,10 @@ import {
   Flex,
   Text,
   Grid,
-  Center,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import CarpetaImagenes from "../components/CarpetaImagenes";
-import Card3DPopOut from "../components/Card3DPopOut";
+import PortfolioCard from "../components/PortfolioCard";
 import { useTranslation } from "react-i18next";
 import OptimizedImage from "../components/OptimizedImage";
 import { cloudUrl } from "../utils/cloudinary";
@@ -16,17 +15,17 @@ const Portfolio = () => {
   const { t } = useTranslation();
 
   const imagePaths = [
-    { src: cloudUrl('public/RENDERS/EDIFICIO/e10.webp', { w: 900 }), titulo: t("portafolio.edificio_ceiba_central"), sub: "Edificio Institucional · 2024", carpeta: "EDIFICIO" },
-    { src: cloudUrl('public/RENDERS/ING_ECU/ie3.webp', { w: 900 }), titulo: t("portafolio.casa_rg"), sub: "Residencial · 2024", carpeta: "ING_ECU" },
-    { src: cloudUrl('public/RENDERS/HABITACION_NINA/hn4.webp', { w: 900 }), titulo: t("portafolio.habitacion_nina"), sub: "Diseño Interior · 2024", carpeta: "HABITACION_NINA" },
-    { src: cloudUrl('public/RENDERS/COCINA_INTERIOR/ci1.webp', { w: 900 }), titulo: t("portafolio.cocina_interior"), sub: "Interior Premium · 2024", carpeta: "COCINA_INTERIOR" },
-    { src: cloudUrl('public/RENDERS/HABITACION/h6.webp', { w: 900 }), titulo: t("portafolio.habitacion_principal"), sub: "Suite Master · 2024", carpeta: "HABITACION" },
-    { src: cloudUrl('public/RENDERS/HABITACION2/hb1.webp', { w: 900 }), titulo: t("portafolio.dormitorio"), sub: "Dormitorio Moderno · 2024", carpeta: "HABITACION2" },
-    { src: cloudUrl('public/RENDERS/MAQUETA1/m11.webp', { w: 900 }), titulo: t("portafolio.render_maqueta"), sub: "Maqueta Arquitectónica", carpeta: "MAQUETA1" },
-    { src: cloudUrl('public/RENDERS/FACHADA/f2.webp', { w: 900 }), titulo: t("portafolio.fachada_proyecto_f24"), sub: "Fachada F24 · 2024", carpeta: "FACHADA" },
-    { src: cloudUrl('public/RENDERS/ZONA_TVs/zt5.webp', { w: 900 }), titulo: t("portafolio.zona_tv"), sub: "Zona Social · 2024", carpeta: "ZONA_TVs" },
-    { src: cloudUrl('public/RENDERS/SALA/s4.webp', { w: 900 }), titulo: t("portafolio.sala"), sub: "Living Space · 2024", carpeta: "SALA" },
-    { src: cloudUrl('public/RENDERS/BBQ/b3.webp', { w: 900 }), titulo: t("portafolio.zona_bbq"), sub: "Zona Exterior · 2024", carpeta: "BBQ" },
+    { src: 'public/RENDERS/EDIFICIO/e10.webp', titulo: t("portafolio.edificio_ceiba_central"), sub: "Edificio Institucional · 2024", carpeta: "EDIFICIO" },
+    { src: 'public/RENDERS/ING_ECU/ie3.webp', titulo: t("portafolio.casa_rg"), sub: "Residencial · 2024", carpeta: "ING_ECU" },
+    { src: 'public/RENDERS/HABITACION_NINA/hn4.webp', titulo: t("portafolio.habitacion_nina"), sub: "Diseño Interior · 2024", carpeta: "HABITACION_NINA" },
+    { src: 'public/RENDERS/COCINA_INTERIOR/ci1.webp', titulo: t("portafolio.cocina_interior"), sub: "Interior Premium · 2024", carpeta: "COCINA_INTERIOR" },
+    { src: 'public/RENDERS/HABITACION/h6.webp', titulo: t("portafolio.habitacion_principal"), sub: "Suite Master · 2024", carpeta: "HABITACION" },
+    { src: 'public/RENDERS/HABITACION2/hb1.webp', titulo: t("portafolio.dormitorio"), sub: "Dormitorio Moderno · 2024", carpeta: "HABITACION2" },
+    { src: 'public/RENDERS/MAQUETA1/m11.webp', titulo: t("portafolio.render_maqueta"), sub: "Maqueta Arquitectónica", carpeta: "MAQUETA1" },
+    { src: 'public/RENDERS/FACHADA/f2.webp', titulo: t("portafolio.fachada_proyecto_f24"), sub: "Fachada F24 · 2024", carpeta: "FACHADA" },
+    { src: 'public/RENDERS/ZONA_TVs/zt5.webp', titulo: t("portafolio.zona_tv"), sub: "Zona Social · 2024", carpeta: "ZONA_TVs" },
+    { src: 'public/RENDERS/SALA/s4.webp', titulo: t("portafolio.sala"), sub: "Living Space · 2024", carpeta: "SALA" },
+    { src: 'public/RENDERS/BBQ/b3.webp', titulo: t("portafolio.zona_bbq"), sub: "Zona Exterior · 2024", carpeta: "BBQ" },
   ];
 
   const [selectedCarpeta, setSelectedCarpeta] = useState(null);
@@ -109,7 +108,7 @@ const Portfolio = () => {
         </Flex>
       </Flex>
 
-      {/* ── Grid de tarjetas 3D ── */}
+      {/* ── Grid de proyectos ── */}
       <Box px={["20px", "40px", "60px"]} py="80px">
         <Grid
           templateColumns={{
@@ -117,28 +116,17 @@ const Portfolio = () => {
             sm: "repeat(2, 1fr)",
             md: "repeat(3, 1fr)",
           }}
-          gap={10}
-          rowGap={16}
+          gap={8}
         >
           {imagePaths.map((image, index) => (
-            <Center
+            <PortfolioCard
               key={index}
-              overflow="visible"
-              position="relative"
-              zIndex={1}
-              _hover={{ zIndex: 20 }}
-              transition="z-index 0s"
-            >
-              <Card3DPopOut
-                src={image.src}
-                alt={image.titulo}
-                titulo={image.titulo}
-                subtitulo={image.sub}
-                onClick={() => handleImageClick(image.carpeta, image.titulo)}
-                width="100%"
-                height="310px"
-              />
-            </Center>
+              src={image.src}
+              alt={image.titulo}
+              titulo={image.titulo}
+              subtitulo={image.sub}
+              onClick={() => handleImageClick(image.carpeta, image.titulo)}
+            />
           ))}
         </Grid>
       </Box>
