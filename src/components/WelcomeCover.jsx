@@ -216,6 +216,8 @@ const WelcomeCover = ({ onEnter }) => {
           borderRadius="0"
           aspectRatio="none"
           priority
+          width={2560}
+          quality="auto:best"
         />
 
         {/* Overlay oscuro */}

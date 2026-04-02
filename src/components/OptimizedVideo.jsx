@@ -79,8 +79,8 @@ const OptimizedVideo = ({
             bg="black"
             {...props}
         >
-            {/* Loading spinner */}
-            {!isLoaded && isVisible && (
+            {/* Loading spinner — disabled for priority to avoid visual flickering */}
+            {!isLoaded && isVisible && !priority && (
                 <Center position="absolute" inset={0} zIndex={1}>
                     <Spinner color="whiteAlpha.600" size="xl" thickness="2px" />
                 </Center>
@@ -106,10 +106,19 @@ const OptimizedVideo = ({
                         pointerEvents: controls ? "auto" : "none",
                     }}
                 >
-                    {/* HLS for Safari + modern browsers */}
-                    {hlsSrc && <source src={hlsSrc} type="application/x-mpegURL" />}
-                    {/* MP4 optimised fallback */}
-                    {mp4Src && <source src={mp4Src} type="video/mp4" />}
+                    {/* Source order priority: 
+                        If priority is set, we use ONLY optimized MP4 to guarantee immediate 100% sharpness 
+                        and avoid the adaptive bitrate startup-blur of HLS (m3u8). */}
+                    {priority ? (
+                        <>
+                            {mp4Src && <source src={mp4Src} type="video/mp4" />}
+                        </>
+                    ) : (
+                        <>
+                            {hlsSrc && <source src={hlsSrc} type="application/x-mpegURL" />}
+                            {mp4Src && <source src={mp4Src} type="video/mp4" />}
+                        </>
+                    )}
                 </video>
             )}
 
