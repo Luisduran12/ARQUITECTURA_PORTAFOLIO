@@ -15,13 +15,15 @@ const Portfolio = () => {
   const { t } = useTranslation();
 
   const imagePaths = [
+    { src: 'public/RENDERS/ZONA SOCIAL/1.jpg', titulo: t("portafolio.zona_social"), sub: "Área Social · 2024", carpeta: "ZONA SOCIAL" },
+    { src: 'public/RENDERS/PROPUESTAS/5.jpg', titulo: t("portafolio.propuestas"), sub: "Propuestas de Diseño · 2024", carpeta: "PROPUESTAS" },
+    { src: 'public/RENDERS/HABITACION/12.jpg', titulo: t("portafolio.habitacion"), sub: "Diseño de Habitación · 2024", carpeta: "HABITACION" },
+    { src: 'public/RENDERS/HABITACION PRINCIPAL/1.jpg', titulo: t("portafolio.habitacion_principal"), sub: "Habitación Principal · 2024", carpeta: "HABITACION PRINCIPAL" },
+    { src: 'public/RENDERS/INTERIORISMO/1.jpg', titulo: t("portafolio.interiorismo"), sub: "Propuesta de Interiorismo · 2024", carpeta: "INTERIORISMO" },
     { src: 'public/RENDERS/FACHADA_R3/1.png', titulo: t("portafolio.fachada_r3"), sub: "Fachada Moderna · 2024", carpeta: "FACHADA_R3" },
     { src: 'public/RENDERS/CHINACOTA/1.png', titulo: t("portafolio.cabana_chinacota"), sub: "Cabaña de descanso · 2024", carpeta: "CHINACOTA" },
-    { src: 'public/RENDERS/INTERIORISMO/1_vruuqi.jpg', titulo: t("portafolio.interiorismo"), sub: "Propuesta de Interiorismo · 2024", carpeta: "INTERIORISMO" },
-    { src: 'public/RENDERS/HABITACION PRINCIPAL/1_cgfhc7.jpg', titulo: t("portafolio.habitacion_principal"), sub: "Habitación Principal · 2024", carpeta: "HABITACION PRINCIPAL" },
     { src: 'public/RENDERS/INTERIOR ARBNB/1_o5xdk9.jpg', titulo: t("portafolio.interior_airbnb"), sub: "Airbnb Studio · 2024", carpeta: "INTERIOR ARBNB" },
     { src: 'public/RENDERS/FACHADAS/1_i8nkng.jpg', titulo: t("portafolio.fachadas"), sub: "Diseño Exterior · 2024", carpeta: "FACHADAS" },
-    { src: 'public/RENDERS/ZONA SOCIAL/1_hxga0h.jpg', titulo: t("portafolio.zona_social"), sub: "Área Social · 2024", carpeta: "ZONA SOCIAL" },
     { src: 'public/RENDERS/EDIFICIO/e10.webp', titulo: t("portafolio.edificio_ceiba_central"), sub: "Edificio Institucional · 2024", carpeta: "EDIFICIO" },
     { src: 'public/RENDERS/ING_ECU/ie3.webp', titulo: t("portafolio.casa_rg"), sub: "Residencial · 2024", carpeta: "ING_ECU" },
     { src: 'public/RENDERS/HABITACION_NINA/hn4.webp', titulo: t("portafolio.habitacion_nina"), sub: "Diseño Interior · 2024", carpeta: "HABITACION_NINA" },

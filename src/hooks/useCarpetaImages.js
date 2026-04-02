@@ -28,6 +28,16 @@ export const useCarpetaImages = (carpeta) => {
                     const folderPath = `public/RENDERS/${carpeta}/`;
                     const urls = Object.keys(assetMap)
                         .filter(path => path.includes(folderPath) && !assetMap[path].is_video)
+                        .sort((a, b) => {
+                            // Extract numeric part from filename (e.g., "1.jpg" or "b1.webp")
+                            const getNum = (s) => {
+                                const parts = s.split('/');
+                                const fileName = parts[parts.length - 1];
+                                const match = fileName.match(/(\d+)/);
+                                return match ? parseInt(match[0], 10) : 0;
+                            };
+                            return getNum(a) - getNum(b);
+                        })
                         .map(path => ({
                             src: assetMap[path].url,
                             publicId: assetMap[path].public_id
