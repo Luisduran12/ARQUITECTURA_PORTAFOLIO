@@ -56,7 +56,7 @@ const OptimizedImage = ({
             overflow="hidden"
             width={width}
             height={height}
-            aspectRatio={aspectRatio}
+            aspectRatio={aspectRatio === "none" ? undefined : aspectRatio}
             bg="gray.900"
             borderRadius={borderRadius}
             flexShrink={0}

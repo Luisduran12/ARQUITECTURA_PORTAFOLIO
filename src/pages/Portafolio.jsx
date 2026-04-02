@@ -55,22 +55,30 @@ const Portfolio = () => {
         position="relative"
         p="30px"
       >
-        <OptimizedImage
-          src={cloudUrl("public/RENDERS/ZONA_TVs/zt4.webp", { w: 1920 })}
-          alt="Fondo Portafolio"
+        {/* Imagen de fondo — posición absoluta para llenar todo el hero */}
+        <Box
           position="absolute"
-          top="0"
-          left="0"
-          width="100%"
-          height="100%"
-          priority={true}
-          borderRadius="0"
-        />
+          inset="0"
+          overflow="hidden"
+        >
+          <OptimizedImage
+            src={cloudUrl("public/RENDERS/ZONA_TVs/zt4.webp", { w: 1920 })}
+            alt="Fondo Portafolio"
+            priority
+            aspectRatio="none"
+            width="100%"
+            height="100%"
+            borderRadius="0"
+          />
+        </Box>
+        {/* Overlay oscuro */}
         <Box
           position="absolute"
           inset="0"
           bg="rgba(0,0,0,0.45)"
+          zIndex="1"
         />
+        {/* Texto centrado */}
         <Flex
           position="absolute"
           inset="0"
@@ -78,6 +86,7 @@ const Portfolio = () => {
           alignItems="center"
           flexDirection="column"
           gap="12px"
+          zIndex="2"
         >
           <Text
             fontSize={["4xl", "5xl", "6xl", "7xl"]}
@@ -110,13 +119,15 @@ const Portfolio = () => {
           }}
           gap={10}
           rowGap={16}
-          sx={{ "& > *": { overflow: "visible" } }}
         >
           {imagePaths.map((image, index) => (
             <Center
               key={index}
               overflow="visible"
-              sx={{ perspective: "none" }}
+              position="relative"
+              zIndex={1}
+              _hover={{ zIndex: 20 }}
+              transition="z-index 0s"
             >
               <Card3DPopOut
                 src={image.src}
