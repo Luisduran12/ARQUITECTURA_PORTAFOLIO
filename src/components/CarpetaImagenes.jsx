@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 // src/components/CarpetaImagenes.jsx
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import {
   Box,
   Grid,
@@ -130,8 +130,23 @@ const CarpetaImagenes = ({ titulo, carpeta, onClose }) => {
     setCurrentIndex(index);
     onOpen();
   };
-  const handleNext = () => setCurrentIndex((p) => (p + 1) % filteredImages.length);
-  const handlePrev = () => setCurrentIndex((p) => (p === 0 ? filteredImages.length - 1 : p - 1));
+  const handleNext = useCallback(() => setCurrentIndex((p) => (p + 1) % filteredImages.length), [filteredImages.length]);
+  const handlePrev = useCallback(() => setCurrentIndex((p) => (p === 0 ? filteredImages.length - 1 : p - 1)), [filteredImages.length]);
+
+  // Navegación por teclado
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (!isOpen || filteredImages.length <= 1) return;
+      if (e.key === "ArrowRight") {
+        handleNext();
+      } else if (e.key === "ArrowLeft") {
+        handlePrev();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isOpen, filteredImages.length, handleNext, handlePrev]);
 
   return (
     <Box p={{ base: "16px", md: "20px" }} mt="150px">
