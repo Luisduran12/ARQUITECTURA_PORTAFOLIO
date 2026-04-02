@@ -9,23 +9,24 @@ import { useState } from "react";
 import CarpetaImagenes from "../components/CarpetaImagenes";
 import Card3DPopOut from "../components/Card3DPopOut";
 import { useTranslation } from "react-i18next";
-import LazyImage from "../components/LazyImage";
+import OptimizedImage from "../components/OptimizedImage";
+import { cloudUrl } from "../utils/cloudinary";
 
 const Portfolio = () => {
   const { t } = useTranslation();
 
   const imagePaths = [
-    { src: "/RENDERS/EDIFICIO/e10.webp", titulo: t("portafolio.edificio_ceiba_central"), sub: "Edificio Institucional · 2024", carpeta: "EDIFICIO" },
-    { src: "/RENDERS/ING_ECU/ie3.webp", titulo: t("portafolio.casa_rg"), sub: "Residencial · 2024", carpeta: "ING_ECU" },
-    { src: "/RENDERS/HABITACION_NINA/hn4.webp", titulo: t("portafolio.habitacion_nina"), sub: "Diseño Interior · 2024", carpeta: "HABITACION_NINA" },
-    { src: "/RENDERS/COCINA_INTERIOR/ci1.webp", titulo: t("portafolio.cocina_interior"), sub: "Interior Premium · 2024", carpeta: "COCINA_INTERIOR" },
-    { src: "/RENDERS/HABITACION/h6.webp", titulo: t("portafolio.habitacion_principal"), sub: "Suite Master · 2024", carpeta: "HABITACION" },
-    { src: "/RENDERS/HABITACION2/hb1.webp", titulo: t("portafolio.dormitorio"), sub: "Dormitorio Moderno · 2024", carpeta: "HABITACION2" },
-    { src: "/RENDERS/MAQUETA1/m11.webp", titulo: t("portafolio.render_maqueta"), sub: "Maqueta Arquitectónica", carpeta: "MAQUETA1" },
-    { src: "/RENDERS/FACHADA/f2.webp", titulo: t("portafolio.fachada_proyecto_f24"), sub: "Fachada F24 · 2024", carpeta: "FACHADA" },
-    { src: "/RENDERS/ZONA_TVs/zt5.webp", titulo: t("portafolio.zona_tv"), sub: "Zona Social · 2024", carpeta: "ZONA_TVs" },
-    { src: "/RENDERS/SALA/s4.webp", titulo: t("portafolio.sala"), sub: "Living Space · 2024", carpeta: "SALA" },
-    { src: "/RENDERS/BBQ/b3.webp", titulo: t("portafolio.zona_bbq"), sub: "Zona Exterior · 2024", carpeta: "BBQ" },
+    { src: cloudUrl('public/RENDERS/EDIFICIO/e10.webp', { w: 900 }), titulo: t("portafolio.edificio_ceiba_central"), sub: "Edificio Institucional · 2024", carpeta: "EDIFICIO" },
+    { src: cloudUrl('public/RENDERS/ING_ECU/ie3.webp', { w: 900 }), titulo: t("portafolio.casa_rg"), sub: "Residencial · 2024", carpeta: "ING_ECU" },
+    { src: cloudUrl('public/RENDERS/HABITACION_NINA/hn4.webp', { w: 900 }), titulo: t("portafolio.habitacion_nina"), sub: "Diseño Interior · 2024", carpeta: "HABITACION_NINA" },
+    { src: cloudUrl('public/RENDERS/COCINA_INTERIOR/ci1.webp', { w: 900 }), titulo: t("portafolio.cocina_interior"), sub: "Interior Premium · 2024", carpeta: "COCINA_INTERIOR" },
+    { src: cloudUrl('public/RENDERS/HABITACION/h6.webp', { w: 900 }), titulo: t("portafolio.habitacion_principal"), sub: "Suite Master · 2024", carpeta: "HABITACION" },
+    { src: cloudUrl('public/RENDERS/HABITACION2/hb1.webp', { w: 900 }), titulo: t("portafolio.dormitorio"), sub: "Dormitorio Moderno · 2024", carpeta: "HABITACION2" },
+    { src: cloudUrl('public/RENDERS/MAQUETA1/m11.webp', { w: 900 }), titulo: t("portafolio.render_maqueta"), sub: "Maqueta Arquitectónica", carpeta: "MAQUETA1" },
+    { src: cloudUrl('public/RENDERS/FACHADA/f2.webp', { w: 900 }), titulo: t("portafolio.fachada_proyecto_f24"), sub: "Fachada F24 · 2024", carpeta: "FACHADA" },
+    { src: cloudUrl('public/RENDERS/ZONA_TVs/zt5.webp', { w: 900 }), titulo: t("portafolio.zona_tv"), sub: "Zona Social · 2024", carpeta: "ZONA_TVs" },
+    { src: cloudUrl('public/RENDERS/SALA/s4.webp', { w: 900 }), titulo: t("portafolio.sala"), sub: "Living Space · 2024", carpeta: "SALA" },
+    { src: cloudUrl('public/RENDERS/BBQ/b3.webp', { w: 900 }), titulo: t("portafolio.zona_bbq"), sub: "Zona Exterior · 2024", carpeta: "BBQ" },
   ];
 
   const [selectedCarpeta, setSelectedCarpeta] = useState(null);
@@ -54,8 +55,8 @@ const Portfolio = () => {
         position="relative"
         p="30px"
       >
-        <LazyImage
-          src="/RENDERS/ZONA_TVs/zt4.webp"
+        <OptimizedImage
+          src={cloudUrl("public/RENDERS/ZONA_TVs/zt4.webp", { w: 1920 })}
           alt="Fondo Portafolio"
           position="absolute"
           top="0"
@@ -63,6 +64,7 @@ const Portfolio = () => {
           width="100%"
           height="100%"
           priority={true}
+          borderRadius="0"
         />
         <Box
           position="absolute"

@@ -6,7 +6,6 @@ import {
     Heading,
     Text,
     SimpleGrid,
-    Image,
     VStack,
     Breadcrumb,
     BreadcrumbItem,
@@ -20,6 +19,9 @@ import { motion } from 'framer-motion';
 import { FaChevronRight } from 'react-icons/fa';
 import Page from '../container/Page';
 import { useTranslation } from 'react-i18next';
+import OptimizedImage from '../components/OptimizedImage';
+import OptimizedVideo from '../components/OptimizedVideo';
+import { cloudUrl, cloudVideo } from '../utils/cloudinary';
 
 const ServicioDetalle = () => {
     const { id } = useParams();
@@ -29,7 +31,7 @@ const ServicioDetalle = () => {
     const serviceData = {
         'animaciones-3d': {
             titulo: t('servicios.animaciones'),
-            video: '/videos/animaciones3d.mp4',
+            video: 'public/videos/animaciones3d.mp4',
             descripcion: 'Transformamos tus planos en experiencias cinematográficas. Nuestras animaciones permiten recorrer cada espacio antes de que sea construido, capturando la luz, los materiales y la esencia de tu proyecto.',
             proceso: [
                 { paso: '01', titulo: 'Briefing', desc: 'Entendemos tu visión y los puntos clave del proyecto.' },
@@ -38,10 +40,10 @@ const ServicioDetalle = () => {
                 { paso: '04', titulo: 'Renderizado', desc: 'Procesamiento de alta calidad para un acabado fotorrealista.' }
             ],
             ejemplos: [
-                '/RENDERS/EDIFICIO/e1.webp',
-                '/RENDERS/SALA/s1.webp',
-                '/RENDERS/COCINA_INTERIOR/ci1.webp',
-                '/RENDERS/HABITACION/h1.webp'
+                cloudUrl('public/RENDERS/EDIFICIO/e1.webp', { w: 1280 }),
+                cloudUrl('public/RENDERS/SALA/s1.webp', { w: 1280 }),
+                cloudUrl('public/RENDERS/COCINA_INTERIOR/ci1.webp', { w: 1280 }),
+                cloudUrl('public/RENDERS/HABITACION/h1.webp', { w: 1280 })
             ]
         },
         'foto-realista': {
@@ -55,10 +57,10 @@ const ServicioDetalle = () => {
                 { paso: '04', titulo: 'Post-Producción', desc: 'Ajustes finales para un resultado de nivel cinematográfico.' }
             ],
             ejemplos: [
-                '/RENDERS/ZONA_TVs/zt5.webp',
-                '/RENDERS/FACHADA/f2.webp',
-                '/RENDERS/BBQ/b3.webp',
-                '/RENDERS/HABITACION2/hb4.webp'
+                cloudUrl('public/RENDERS/ZONA_TVs/zt5.webp', { w: 1280 }),
+                cloudUrl('public/RENDERS/FACHADA/f2.webp', { w: 1280 }),
+                cloudUrl('public/RENDERS/BBQ/b3.webp', { w: 1280 }),
+                cloudUrl('public/RENDERS/HABITACION2/hb4.webp', { w: 1280 })
             ]
         },
         'recorridos-virtuales': {
@@ -72,10 +74,10 @@ const ServicioDetalle = () => {
                 { paso: '04', titulo: 'Publicación', desc: 'Entregamos el recorrido accesible desde cualquier dispositivo.' }
             ],
             ejemplos: [
-                '/RENDERS/HABITACION/h6.webp',
-                '/RENDERS/HABI_NIÑA/hn4.webp',
-                '/RENDERS/SALA/s4.webp',
-                '/RENDERS/COCINA_INTERIOR/ci5.webp'
+                cloudUrl('public/RENDERS/HABITACION/h6.webp', { w: 1280 }),
+                cloudUrl('public/RENDERS/HABITACION_NINA/hn4.webp', { w: 1280 }),
+                cloudUrl('public/RENDERS/SALA/s4.webp', { w: 1280 }),
+                cloudUrl('public/RENDERS/COCINA_INTERIOR/ci5.webp', { w: 1280 })
             ]
         },
         'visualizacion-interiores': {
@@ -89,10 +91,10 @@ const ServicioDetalle = () => {
                 { paso: '04', titulo: 'Render Final', desc: 'Imagen fotorrealista lista para presentar a tu cliente.' }
             ],
             ejemplos: [
-                '/RENDERS/COCINA_INTERIOR/ci1.webp',
-                '/RENDERS/HABITACION/h6.webp',
-                '/RENDERS/ZONA_TVs/zt5.webp',
-                '/RENDERS/HABI_NIÑA/hn4.webp'
+                cloudUrl('public/RENDERS/COCINA_INTERIOR/ci1.webp', { w: 1280 }),
+                cloudUrl('public/RENDERS/HABITACION/h6.webp', { w: 1280 }),
+                cloudUrl('public/RENDERS/ZONA_TVs/zt5.webp', { w: 1280 }),
+                cloudUrl('public/RENDERS/HABITACION_NINA/hn4.webp', { w: 1280 })
             ]
         }
     };
@@ -147,17 +149,13 @@ const ServicioDetalle = () => {
                                 bg="gray.900"
                                 aspectRatio={16 / 9}
                             >
-                                <video
-                                    autoPlay
-                                    muted
-                                    loop
-                                    playsInline
-                                    controls
-                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                                >
-                                    <source src={currentService.video} type="video/mp4" />
-                                    Tu navegador no soporta el video.
-                                </video>
+                                <OptimizedVideo
+                                    src={currentService.video}
+                                    autoPlay={true}
+                                    muted={true}
+                                    loop={true}
+                                    borderRadius="2xl"
+                                />
                             </Box>
                         )}
                     </VStack>
@@ -231,13 +229,10 @@ const ServicioDetalle = () => {
                                     whileHover={{ scale: 1.02 }}
                                     transition={{ duration: 0.4 }}
                                 >
-                                    <Image
+                                    <OptimizedImage
                                         src={img}
                                         alt={`Proyecto ${idx + 1} - ${currentService.titulo}`}
-                                        w="100%"
-                                        h="300px"
-                                        objectFit="cover"
-                                        loading="lazy"
+                                        aspectRatio="16/9"
                                     />
                                 </Box>
                             ))}

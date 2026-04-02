@@ -1,5 +1,6 @@
-import React, { useRef } from "react";
+import React, { useRef, memo } from "react";
 import { Box, Text } from "@chakra-ui/react";
+import { cloudUrl } from "../utils/cloudinary";
 
 /**
  * Card3DPopOut — Tarjeta con efecto 3D interactivo
@@ -95,7 +96,7 @@ const Card3DPopOut = ({
                 >
                     <Box
                         as="img"
-                        src={src}
+                        src={cloudUrl(src, { w: 800 })}
                         alt={alt}
                         width="100%"
                         height="100%"
@@ -142,7 +143,7 @@ const Card3DPopOut = ({
                 <Box
                     ref={popRef}
                     as="img"
-                    src={src}
+                    src={cloudUrl(src, { w: 600 })}
                     alt={`${alt} pop`}
                     position="absolute"
                     bottom="-28px"
@@ -230,4 +231,4 @@ const Card3DPopOut = ({
     );
 };
 
-export default React.memo(Card3DPopOut);
+export default memo(Card3DPopOut);

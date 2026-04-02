@@ -1,5 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import OptimizedImage from "./OptimizedImage";
+import OptimizedVideo from "./OptimizedVideo";
+import { cloudVideo, cloudUrl } from "../utils/cloudinary";
 
 const WelcomeCover = ({ onEnter }) => {
   const { t } = useTranslation();
@@ -202,16 +205,15 @@ const WelcomeCover = ({ onEnter }) => {
       `}</style>
 
       <div className="welcome-cover">
-        {/* Video de fondo */}
-        <video
+        {/* Video de fondo Optimizado con HLS */}
+        <OptimizedVideo
           className="welcome-video"
-          src="/videos/mi_portada.mp4"
-          poster="/RENDERS/EDIFICIO/e2.webp"
+          src="public/videos/mi_portada.mp4"
           autoPlay
           loop
           muted
-          playsInline
-          preload="none"
+          borderRadius="0"
+          aspectRatio="none"
         />
 
         {/* Overlay oscuro */}
@@ -220,10 +222,16 @@ const WelcomeCover = ({ onEnter }) => {
         {/* Cortina de salida */}
         <div className={`curtain ${exiting ? "active" : ""}`} ref={curtainRef} />
 
-        {/* Logo superior izquierdo */}
-        <div className="welcome-logo">
-          <img fetchpriority="high" src="/publico/HOR_WHITE.webp" alt="Logo SWAG Arquitectos" />
-        </div>
+        {/* Logo — optimised via cloudUrl helper */}
+        <Box className="welcome-logo">
+          <OptimizedImage
+            src={cloudUrl("public/publico/HOR_WHITE.webp", { w: 260 })}
+            alt="Logo SWAG Arquitectos"
+            priority
+            width="130px"
+            aspectRatio="auto"
+          />
+        </Box>
 
         {/* Centro */}
         <div className="welcome-center">

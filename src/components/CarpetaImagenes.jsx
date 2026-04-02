@@ -21,7 +21,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 import { useTranslation } from "react-i18next";
 import { useCarpetaImages } from "../hooks/useCarpetaImages";
-import GlobalLazyImage from "./LazyImage";
+import OptimizedImage from "./OptimizedImage";
 
 // ─────────────────────────────────────────────────────────
 // Imágenes locales como fallback si Cloudinary no responde
@@ -191,10 +191,11 @@ const CarpetaImagenes = ({ titulo, carpeta, onClose }) => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: Math.min(index * 0.05, 0.5) }}
             >
-              <GlobalLazyImage
+              <OptimizedImage
                 src={image.src}
                 alt={`${titulo} ${index + 1}`}
                 onClick={() => handleClickImage(index)}
+                cursor="pointer"
               />
             </motion.div>
           ))}

@@ -1,0 +1,61 @@
+import { v2 as cloudinary } from "cloudinary";
+import fs from "fs";
+import path from "path";
+import dotenv from "dotenv";
+
+dotenv.config();
+
+cloudinary.config({
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.API_KEY,
+  api_secret: process.env.API_SECRET,
+});
+
+const imageMap = {};
+
+async function uploadImage(filePath) {
+  const fileName = path.basename(filePath);
+  const nameWithoutExt = fileName.split(".")[0];
+
+  try {
+    const result = await cloudinary.uploader.upload(filePath, {
+      folder: "arquitectura",
+    });
+
+    const optimizedUrl = result.secure_url.replace(
+      "/upload/",
+      "/upload/f_auto,q_auto:good,w_1600/"
+    );
+
+    imageMap[nameWithoutExt] = optimizedUrl;
+
+    console.log(`✔ Subida: ${fileName}`);
+  } catch (error) {
+    console.error(`❌ Error subiendo ${fileName}`, error.message);
+  }
+}
+
+async function walk(dir) {
+  const files = fs.readdirSync(dir);
+
+  for (const file of files) {
+    const fullPath = path.join(dir, file);
+
+    if (fs.statSync(fullPath).isDirectory()) {
+      await walk(fullPath);
+    } else if (/\.(jpg|jpeg|png)$/i.test(file)) {
+      await uploadImage(fullPath);
+    }
+  }
+}
+
+async function main() {
+  await walk("./public");
+  await walk("./src");
+
+  fs.writeFileSync("image-map.json", JSON.stringify(imageMap, null, 2));
+
+
+
+
+

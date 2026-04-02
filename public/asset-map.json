@@ -1,0 +1,642 @@
+{
+  "public/RENDERS/BBQ/b1.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087157/arquitectura_premium/public/RENDERS/BBQ/b1.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/BBQ/b1",
+    "format": "webp",
+    "version": 1775087157,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/BBQ/b2.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087158/arquitectura_premium/public/RENDERS/BBQ/b2.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/BBQ/b2",
+    "format": "webp",
+    "version": 1775087158,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/BBQ/b3.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087159/arquitectura_premium/public/RENDERS/BBQ/b3.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/BBQ/b3",
+    "format": "webp",
+    "version": 1775087159,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/BBQ/b4.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087161/arquitectura_premium/public/RENDERS/BBQ/b4.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/BBQ/b4",
+    "format": "webp",
+    "version": 1775087161,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/COCINA_INTERIOR/ci1.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087162/arquitectura_premium/public/RENDERS/COCINA_INTERIOR/ci1.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/COCINA_INTERIOR/ci1",
+    "format": "webp",
+    "version": 1775087162,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/COCINA_INTERIOR/ci2.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087163/arquitectura_premium/public/RENDERS/COCINA_INTERIOR/ci2.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/COCINA_INTERIOR/ci2",
+    "format": "webp",
+    "version": 1775087163,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/COCINA_INTERIOR/ci3.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087164/arquitectura_premium/public/RENDERS/COCINA_INTERIOR/ci3.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/COCINA_INTERIOR/ci3",
+    "format": "webp",
+    "version": 1775087164,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/COCINA_INTERIOR/ci4.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087164/arquitectura_premium/public/RENDERS/COCINA_INTERIOR/ci4.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/COCINA_INTERIOR/ci4",
+    "format": "webp",
+    "version": 1775087164,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/COCINA_INTERIOR/ci5.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087165/arquitectura_premium/public/RENDERS/COCINA_INTERIOR/ci5.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/COCINA_INTERIOR/ci5",
+    "format": "webp",
+    "version": 1775087165,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/EDIFICIO/e1.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087166/arquitectura_premium/public/RENDERS/EDIFICIO/e1.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/EDIFICIO/e1",
+    "format": "webp",
+    "version": 1775087166,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/EDIFICIO/e10.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087167/arquitectura_premium/public/RENDERS/EDIFICIO/e10.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/EDIFICIO/e10",
+    "format": "webp",
+    "version": 1775087167,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/EDIFICIO/e11.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087168/arquitectura_premium/public/RENDERS/EDIFICIO/e11.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/EDIFICIO/e11",
+    "format": "webp",
+    "version": 1775087168,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/EDIFICIO/e2.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087169/arquitectura_premium/public/RENDERS/EDIFICIO/e2.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/EDIFICIO/e2",
+    "format": "webp",
+    "version": 1775087169,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/EDIFICIO/e3.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087170/arquitectura_premium/public/RENDERS/EDIFICIO/e3.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/EDIFICIO/e3",
+    "format": "webp",
+    "version": 1775087170,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/EDIFICIO/e4.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087171/arquitectura_premium/public/RENDERS/EDIFICIO/e4.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/EDIFICIO/e4",
+    "format": "webp",
+    "version": 1775087171,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/EDIFICIO/e5.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087173/arquitectura_premium/public/RENDERS/EDIFICIO/e5.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/EDIFICIO/e5",
+    "format": "webp",
+    "version": 1775087173,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/EDIFICIO/e6.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087174/arquitectura_premium/public/RENDERS/EDIFICIO/e6.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/EDIFICIO/e6",
+    "format": "webp",
+    "version": 1775087174,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/EDIFICIO/e7.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087177/arquitectura_premium/public/RENDERS/EDIFICIO/e7.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/EDIFICIO/e7",
+    "format": "webp",
+    "version": 1775087177,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/EDIFICIO/e8.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087178/arquitectura_premium/public/RENDERS/EDIFICIO/e8.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/EDIFICIO/e8",
+    "format": "webp",
+    "version": 1775087178,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/EDIFICIO/e9.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087178/arquitectura_premium/public/RENDERS/EDIFICIO/e9.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/EDIFICIO/e9",
+    "format": "webp",
+    "version": 1775087178,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/FACHADA/f1.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087179/arquitectura_premium/public/RENDERS/FACHADA/f1.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/FACHADA/f1",
+    "format": "webp",
+    "version": 1775087179,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/FACHADA/f2.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087181/arquitectura_premium/public/RENDERS/FACHADA/f2.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/FACHADA/f2",
+    "format": "webp",
+    "version": 1775087181,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/HABITACION/h1.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087182/arquitectura_premium/public/RENDERS/HABITACION/h1.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/HABITACION/h1",
+    "format": "webp",
+    "version": 1775087182,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/HABITACION/h2.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087183/arquitectura_premium/public/RENDERS/HABITACION/h2.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/HABITACION/h2",
+    "format": "webp",
+    "version": 1775087183,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/HABITACION/h3.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087184/arquitectura_premium/public/RENDERS/HABITACION/h3.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/HABITACION/h3",
+    "format": "webp",
+    "version": 1775087184,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/HABITACION/h4.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087185/arquitectura_premium/public/RENDERS/HABITACION/h4.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/HABITACION/h4",
+    "format": "webp",
+    "version": 1775087185,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/HABITACION/h5.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087186/arquitectura_premium/public/RENDERS/HABITACION/h5.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/HABITACION/h5",
+    "format": "webp",
+    "version": 1775087186,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/HABITACION/h6.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087187/arquitectura_premium/public/RENDERS/HABITACION/h6.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/HABITACION/h6",
+    "format": "webp",
+    "version": 1775087187,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/HABITACION2/hb1.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087189/arquitectura_premium/public/RENDERS/HABITACION2/hb1.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/HABITACION2/hb1",
+    "format": "webp",
+    "version": 1775087189,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/HABITACION2/hb2.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087189/arquitectura_premium/public/RENDERS/HABITACION2/hb2.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/HABITACION2/hb2",
+    "format": "webp",
+    "version": 1775087189,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/HABITACION2/hb3.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087190/arquitectura_premium/public/RENDERS/HABITACION2/hb3.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/HABITACION2/hb3",
+    "format": "webp",
+    "version": 1775087190,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/HABITACION2/hb4.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087191/arquitectura_premium/public/RENDERS/HABITACION2/hb4.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/HABITACION2/hb4",
+    "format": "webp",
+    "version": 1775087191,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/HABITACION2/hb5.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087192/arquitectura_premium/public/RENDERS/HABITACION2/hb5.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/HABITACION2/hb5",
+    "format": "webp",
+    "version": 1775087192,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/HABITACION_NINA/hn1.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087193/arquitectura_premium/public/RENDERS/HABITACION_NINA/hn1.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/HABITACION_NINA/hn1",
+    "format": "webp",
+    "version": 1775087193,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/HABITACION_NINA/hn2.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087194/arquitectura_premium/public/RENDERS/HABITACION_NINA/hn2.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/HABITACION_NINA/hn2",
+    "format": "webp",
+    "version": 1775087194,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/HABITACION_NINA/hn3.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087195/arquitectura_premium/public/RENDERS/HABITACION_NINA/hn3.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/HABITACION_NINA/hn3",
+    "format": "webp",
+    "version": 1775087195,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/HABITACION_NINA/hn4.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087195/arquitectura_premium/public/RENDERS/HABITACION_NINA/hn4.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/HABITACION_NINA/hn4",
+    "format": "webp",
+    "version": 1775087195,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/HABITACION_NINA/hn5.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087197/arquitectura_premium/public/RENDERS/HABITACION_NINA/hn5.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/HABITACION_NINA/hn5",
+    "format": "webp",
+    "version": 1775087197,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/ING_ECU/ie1.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087198/arquitectura_premium/public/RENDERS/ING_ECU/ie1.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/ING_ECU/ie1",
+    "format": "webp",
+    "version": 1775087198,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/ING_ECU/ie2.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087199/arquitectura_premium/public/RENDERS/ING_ECU/ie2.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/ING_ECU/ie2",
+    "format": "webp",
+    "version": 1775087199,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/ING_ECU/ie3.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087200/arquitectura_premium/public/RENDERS/ING_ECU/ie3.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/ING_ECU/ie3",
+    "format": "webp",
+    "version": 1775087200,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/MAQUETA1/m11.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087201/arquitectura_premium/public/RENDERS/MAQUETA1/m11.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/MAQUETA1/m11",
+    "format": "webp",
+    "version": 1775087201,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/MAQUETA1/m12.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087202/arquitectura_premium/public/RENDERS/MAQUETA1/m12.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/MAQUETA1/m12",
+    "format": "webp",
+    "version": 1775087202,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/MAQUETA1/m13.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087203/arquitectura_premium/public/RENDERS/MAQUETA1/m13.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/MAQUETA1/m13",
+    "format": "webp",
+    "version": 1775087203,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/MAQUETA2/m21.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087204/arquitectura_premium/public/RENDERS/MAQUETA2/m21.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/MAQUETA2/m21",
+    "format": "webp",
+    "version": 1775087204,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/MAQUETA2/m22.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087205/arquitectura_premium/public/RENDERS/MAQUETA2/m22.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/MAQUETA2/m22",
+    "format": "webp",
+    "version": 1775087205,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/MAQUETA2/m23.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087206/arquitectura_premium/public/RENDERS/MAQUETA2/m23.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/MAQUETA2/m23",
+    "format": "webp",
+    "version": 1775087206,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/MAQUETA2/m24.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087207/arquitectura_premium/public/RENDERS/MAQUETA2/m24.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/MAQUETA2/m24",
+    "format": "webp",
+    "version": 1775087207,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/SALA/s1.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087208/arquitectura_premium/public/RENDERS/SALA/s1.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/SALA/s1",
+    "format": "webp",
+    "version": 1775087208,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/SALA/s2.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087209/arquitectura_premium/public/RENDERS/SALA/s2.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/SALA/s2",
+    "format": "webp",
+    "version": 1775087209,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/SALA/s3.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087210/arquitectura_premium/public/RENDERS/SALA/s3.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/SALA/s3",
+    "format": "webp",
+    "version": 1775087210,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/SALA/s4.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087210/arquitectura_premium/public/RENDERS/SALA/s4.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/SALA/s4",
+    "format": "webp",
+    "version": 1775087210,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/ZONA_TVs/zt1.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087212/arquitectura_premium/public/RENDERS/ZONA_TVs/zt1.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/ZONA_TVs/zt1",
+    "format": "webp",
+    "version": 1775087212,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/ZONA_TVs/zt2.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087212/arquitectura_premium/public/RENDERS/ZONA_TVs/zt2.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/ZONA_TVs/zt2",
+    "format": "webp",
+    "version": 1775087212,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/ZONA_TVs/zt3.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087213/arquitectura_premium/public/RENDERS/ZONA_TVs/zt3.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/ZONA_TVs/zt3",
+    "format": "webp",
+    "version": 1775087213,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/ZONA_TVs/zt4.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087215/arquitectura_premium/public/RENDERS/ZONA_TVs/zt4.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/ZONA_TVs/zt4",
+    "format": "webp",
+    "version": 1775087215,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/ZONA_TVs/zt5.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087216/arquitectura_premium/public/RENDERS/ZONA_TVs/zt5.webp",
+    "public_id": "arquitectura_premium/public/RENDERS/ZONA_TVs/zt5",
+    "format": "webp",
+    "version": 1775087216,
+    "is_video": false,
+    "hls": null
+  },
+  "public/motores/D5R.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087216/arquitectura_premium/public/motores/D5R.webp",
+    "public_id": "arquitectura_premium/public/motores/D5R",
+    "format": "webp",
+    "version": 1775087216,
+    "is_video": false,
+    "hls": null
+  },
+  "public/motores/ENSCAPE.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087217/arquitectura_premium/public/motores/ENSCAPE.webp",
+    "public_id": "arquitectura_premium/public/motores/ENSCAPE",
+    "format": "webp",
+    "version": 1775087217,
+    "is_video": false,
+    "hls": null
+  },
+  "public/motores/LUMION.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087218/arquitectura_premium/public/motores/LUMION.webp",
+    "public_id": "arquitectura_premium/public/motores/LUMION",
+    "format": "webp",
+    "version": 1775087218,
+    "is_video": false,
+    "hls": null
+  },
+  "public/motores/TWIMO.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087219/arquitectura_premium/public/motores/TWIMO.webp",
+    "public_id": "arquitectura_premium/public/motores/TWIMO",
+    "format": "webp",
+    "version": 1775087219,
+    "is_video": false,
+    "hls": null
+  },
+  "public/motores/VRAY.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087220/arquitectura_premium/public/motores/VRAY.webp",
+    "public_id": "arquitectura_premium/public/motores/VRAY",
+    "format": "webp",
+    "version": 1775087220,
+    "is_video": false,
+    "hls": null
+  },
+  "public/nosotros/Nosotros1.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087221/arquitectura_premium/public/nosotros/Nosotros1.webp",
+    "public_id": "arquitectura_premium/public/nosotros/Nosotros1",
+    "format": "webp",
+    "version": 1775087221,
+    "is_video": false,
+    "hls": null
+  },
+  "public/publico/FONDO.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087222/arquitectura_premium/public/publico/FONDO.webp",
+    "public_id": "arquitectura_premium/public/publico/FONDO",
+    "format": "webp",
+    "version": 1775087222,
+    "is_video": false,
+    "hls": null
+  },
+  "public/publico/HOR_BLACK.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087223/arquitectura_premium/public/publico/HOR_BLACK.webp",
+    "public_id": "arquitectura_premium/public/publico/HOR_BLACK",
+    "format": "webp",
+    "version": 1775087223,
+    "is_video": false,
+    "hls": null
+  },
+  "public/publico/HOR_WHITE.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087224/arquitectura_premium/public/publico/HOR_WHITE.webp",
+    "public_id": "arquitectura_premium/public/publico/HOR_WHITE",
+    "format": "webp",
+    "version": 1775087224,
+    "is_video": false,
+    "hls": null
+  },
+  "public/publico/Logo.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087224/arquitectura_premium/public/publico/Logo.webp",
+    "public_id": "arquitectura_premium/public/publico/Logo",
+    "format": "webp",
+    "version": 1775087224,
+    "is_video": false,
+    "hls": null
+  },
+  "public/publico/LogoJulian.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087225/arquitectura_premium/public/publico/LogoJulian.webp",
+    "public_id": "arquitectura_premium/public/publico/LogoJulian",
+    "format": "webp",
+    "version": 1775087225,
+    "is_video": false,
+    "hls": null
+  },
+  "public/publico/PerfilFernando.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087226/arquitectura_premium/public/publico/PerfilFernando.webp",
+    "public_id": "arquitectura_premium/public/publico/PerfilFernando",
+    "format": "webp",
+    "version": 1775087226,
+    "is_video": false,
+    "hls": null
+  },
+  "public/publico/PerfilJulian.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087227/arquitectura_premium/public/publico/PerfilJulian.webp",
+    "public_id": "arquitectura_premium/public/publico/PerfilJulian",
+    "format": "webp",
+    "version": 1775087227,
+    "is_video": false,
+    "hls": null
+  },
+  "public/publico/VER_BLACK.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087227/arquitectura_premium/public/publico/VER_BLACK.webp",
+    "public_id": "arquitectura_premium/public/publico/VER_BLACK",
+    "format": "webp",
+    "version": 1775087227,
+    "is_video": false,
+    "hls": null
+  },
+  "public/publico/VER_WHITE.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087229/arquitectura_premium/public/publico/VER_WHITE.webp",
+    "public_id": "arquitectura_premium/public/publico/VER_WHITE",
+    "format": "webp",
+    "version": 1775087229,
+    "is_video": false,
+    "hls": null
+  },
+  "public/publico/flag_es.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087230/arquitectura_premium/public/publico/flag_es.webp",
+    "public_id": "arquitectura_premium/public/publico/flag_es",
+    "format": "webp",
+    "version": 1775087230,
+    "is_video": false,
+    "hls": null
+  },
+  "public/publico/flag_us.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087231/arquitectura_premium/public/publico/flag_us.webp",
+    "public_id": "arquitectura_premium/public/publico/flag_us",
+    "format": "webp",
+    "version": 1775087231,
+    "is_video": false,
+    "hls": null
+  },
+  "public/servicios/FotoRealista.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087232/arquitectura_premium/public/servicios/FotoRealista.webp",
+    "public_id": "arquitectura_premium/public/servicios/FotoRealista",
+    "format": "webp",
+    "version": 1775087232,
+    "is_video": false,
+    "hls": null
+  },
+  "public/servicios/Interiores.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087233/arquitectura_premium/public/servicios/Interiores.webp",
+    "public_id": "arquitectura_premium/public/servicios/Interiores",
+    "format": "webp",
+    "version": 1775087233,
+    "is_video": false,
+    "hls": null
+  },
+  "public/servicios/TresD.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087234/arquitectura_premium/public/servicios/TresD.webp",
+    "public_id": "arquitectura_premium/public/servicios/TresD",
+    "format": "webp",
+    "version": 1775087234,
+    "is_video": false,
+    "hls": null
+  },
+  "public/servicios/Virtuales.webp": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775087235/arquitectura_premium/public/servicios/Virtuales.webp",
+    "public_id": "arquitectura_premium/public/servicios/Virtuales",
+    "format": "webp",
+    "version": 1775087235,
+    "is_video": false,
+    "hls": null
+  },
+  "public/videos/animaciones3d.mp4": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/video/upload/v1775087236/arquitectura_premium/public/videos/animaciones3d.mp4",
+    "public_id": "arquitectura_premium/public/videos/animaciones3d",
+    "format": "mp4",
+    "version": 1775087236,
+    "is_video": true,
+    "hls": "https://res.cloudinary.com/dibjbl4zp/video/upload/sp_full_hd/v1775087236/arquitectura_premium/public/videos/animaciones3d.m3u8"
+  },
+  "public/videos/mi_portada.mp4": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/video/upload/v1775087247/arquitectura_premium/public/videos/mi_portada.mp4",
+    "public_id": "arquitectura_premium/public/videos/mi_portada",
+    "format": "mp4",
+    "version": 1775087247,
+    "is_video": true,
+    "hls": "https://res.cloudinary.com/dibjbl4zp/video/upload/sp_full_hd/v1775087247/arquitectura_premium/public/videos/mi_portada.m3u8"
+  }
+}

@@ -10,14 +10,15 @@ import { Link as RouterLink } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useTranslation } from "react-i18next";
-import LazyImage from "../components/LazyImage";
+import OptimizedImage from "../components/OptimizedImage";
+import { cloudUrl } from "../utils/cloudinary";
 
 const images = [
-  { src: "./RENDERS/EDIFICIO/e1.webp" },
-  { src: "./RENDERS/EDIFICIO/e4.webp" },
-  { src: "./RENDERS/EDIFICIO/e5.webp" },
-  { src: "./RENDERS/EDIFICIO/e8.webp" },
-  { src: "./RENDERS/EDIFICIO/e10.webp" },
+  { src: cloudUrl('public/RENDERS/EDIFICIO/e1.webp', { w: 1280 }) },
+  { src: cloudUrl('public/RENDERS/EDIFICIO/e4.webp', { w: 1280 }) },
+  { src: cloudUrl('public/RENDERS/EDIFICIO/e5.webp', { w: 1280 }) },
+  { src: cloudUrl('public/RENDERS/EDIFICIO/e8.webp', { w: 1280 }) },
+  { src: cloudUrl('public/RENDERS/EDIFICIO/e10.webp', { w: 1280 }) },
 ];
 
 export default function InicioTrabajo() {
@@ -57,7 +58,7 @@ export default function InicioTrabajo() {
       <Slider {...settings} style={{ width: "100%" }}>
         {images.map((image, index) => (
           <Box key={index} px={4}>
-            <LazyImage
+            <OptimizedImage
               src={image.src}
               alt={`Proyecto de arquitectura ${index + 1}`}
               aspectRatio="5/3"

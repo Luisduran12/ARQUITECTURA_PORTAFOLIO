@@ -21,26 +21,16 @@ import { FaPhone, FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaUserCircle } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import OptimizedImage from "../components/OptimizedImage";
+import { cloudUrl } from "../utils/cloudinary";
 
 export default function Nosotros() {
   const { t } = useTranslation();
   const serviciosData = [
-    {
-      imagen: "./servicios/FotoRealista.webp",
-      titulo: t("servicios.renderizado"),
-    },
-    {
-      imagen: "./servicios/TresD.webp",
-      titulo: t("servicios.animaciones"),
-    },
-    {
-      imagen: "./servicios/Virtuales.webp",
-      titulo: t("servicios.recorridos"),
-    },
-    {
-      imagen: "./servicios/Interiores.webp",
-      titulo: t("servicios.visualizacion"),
-    },
+    { imagen: cloudUrl('public/servicios/FotoRealista.webp', { w: 200 }), titulo: t('servicios.renderizado') },
+    { imagen: cloudUrl('public/servicios/TresD.webp', { w: 200 }), titulo: t('servicios.animaciones') },
+    { imagen: cloudUrl('public/servicios/Virtuales.webp', { w: 200 }), titulo: t('servicios.recorridos') },
+    { imagen: cloudUrl('public/servicios/Interiores.webp', { w: 200 }), titulo: t('servicios.visualizacion') },
   ];
   const [w] = useMediaQuery("(min-width: 800px)");
   const { isOpen, onOpen, onClose: closeModal } = useDisclosure();
@@ -62,14 +52,16 @@ export default function Nosotros() {
         position="relative"
         p="30px"
       >
-        <Image loading="lazy" src="./RENDERS/ZONA_TVs/zt1.webp"
-          alt="Fondo"
+        <OptimizedImage
+          src={cloudUrl('public/RENDERS/ZONA_TVs/zt1.webp', { w: 1920 })}
+          alt="Fondo sala de TV"
           position="absolute"
           top="0"
           left="0"
           width="100%"
           height="100%"
-          objectFit="cover"
+          priority={true}
+          borderRadius="0"
         />
         <Box
           w={["100%", "80%", "70%", "60%"]}
@@ -160,10 +152,11 @@ export default function Nosotros() {
                     justifyContent="center"
                     alignItems="center"
                   >
-                    <Image loading="lazy" className="image image-animate image-1"
-                      src="./motores/D5R.webp"
-                      alt="Logo"
-                      w="130px"
+                    <OptimizedImage
+                      src={cloudUrl('public/motores/D5R.webp', { w: 260 })}
+                      alt="Logo D5 Render"
+                      width="130px"
+                      aspectRatio="auto"
                     />
                   </GridItem>
                   <GridItem rowSpan={1} colSpan={1}></GridItem>
@@ -174,10 +167,11 @@ export default function Nosotros() {
                     justifyContent="center"
                     alignItems="center"
                   >
-                    <Image loading="lazy" className="image image-animate image-2"
-                      src="./motores/ENSCAPE.webp"
-                      alt="Logo"
-                      w="120px"
+                    <OptimizedImage
+                      src={cloudUrl('public/motores/ENSCAPE.webp', { w: 240 })}
+                      alt="Logo Enscape"
+                      width="120px"
+                      aspectRatio="auto"
                     />
                   </GridItem>
                   <GridItem rowSpan={1} colSpan={1}></GridItem>
@@ -188,10 +182,11 @@ export default function Nosotros() {
                     justifyContent="center"
                     alignItems="center"
                   >
-                    <Image loading="lazy" className="image image-animate image-3"
-                      src="./motores/LUMION.webp"
-                      alt="Logo"
-                      w="60px"
+                    <OptimizedImage
+                      src={cloudUrl('public/motores/LUMION.webp', { w: 130 })}
+                      alt="Logo Lumion"
+                      width="60px"
+                      aspectRatio="auto"
                     />
                   </GridItem>
                   <GridItem rowSpan={1} colSpan={1}></GridItem>
@@ -202,10 +197,11 @@ export default function Nosotros() {
                     justifyContent="center"
                     alignItems="center"
                   >
-                    <Image loading="lazy" className="image image-animate image-4"
-                      src="./motores/TWIMO.webp"
-                      alt="Logo"
-                      w="130px"
+                    <OptimizedImage
+                      src={cloudUrl('public/motores/TWIMO.webp', { w: 260 })}
+                      alt="Logo Twinmotion"
+                      width="130px"
+                      aspectRatio="auto"
                     />
                   </GridItem>
                   <GridItem rowSpan={1} colSpan={1}></GridItem>
@@ -216,83 +212,44 @@ export default function Nosotros() {
                     justifyContent="center"
                     alignItems="center"
                   >
-                    <Image loading="lazy" className="image image-animate image-5"
-                      src="./motores/VRAY.webp"
-                      alt="Logo"
-                      w="110px"
+                    <OptimizedImage
+                      src={cloudUrl('public/motores/VRAY.webp', { w: 220 })}
+                      alt="Logo Vray"
+                      width="110px"
+                      aspectRatio="auto"
                     />
                   </GridItem>
                 </>
               ) : (
                 <>
-                  <GridItem
-                    rowSpan={1}
-                    colSpan={1}
-                    display="flex"
-                    justifyContent="center"
-                    alignItems="center"
-                  >
-                    <Image loading="lazy" className="image image-animate image-1"
-                      src="./motores/D5R.webp"
-                      alt="Logo"
-                      w="130px"
-                    />
+                  <GridItem rowSpan={1} colSpan={1} display="flex" justifyContent="center" alignItems="center">
+                    <img loading="lazy" className="image image-animate image-1"
+                      src={cloudUrl("public/motores/D5R.webp", { w: 260 })}
+                      alt="Logo D5 Render" width="130" height="auto" />
                   </GridItem>
                   <GridItem rowSpan={1} colSpan={1}></GridItem>
                   <GridItem rowSpan={1} colSpan={1}></GridItem>
-                  <GridItem
-                    rowSpan={1}
-                    colSpan={1}
-                    display="flex"
-                    justifyContent="center"
-                    alignItems="center"
-                  >
-                    <Image loading="lazy" className="image image-animate image-2"
-                      src="./motores/ENSCAPE.webp"
-                      alt="Logo"
-                      w="120px"
-                    />
+                  <GridItem rowSpan={1} colSpan={1} display="flex" justifyContent="center" alignItems="center">
+                    <img loading="lazy" className="image image-animate image-2"
+                      src={cloudUrl("public/motores/ENSCAPE.webp", { w: 240 })}
+                      alt="Logo Enscape" width="120" height="auto" />
                   </GridItem>
-                  <GridItem
-                    rowSpan={1}
-                    colSpan={1}
-                    display="flex"
-                    justifyContent="center"
-                    alignItems="center"
-                  >
-                    <Image loading="lazy" className="image image-animate image-3"
-                      src="./motores/LUMION.webp"
-                      alt="Logo"
-                      w={["40px", "65px"]}
-                    />
+                  <GridItem rowSpan={1} colSpan={1} display="flex" justifyContent="center" alignItems="center">
+                    <img loading="lazy" className="image image-animate image-3"
+                      src={cloudUrl("public/motores/LUMION.webp", { w: 130 })}
+                      alt="Logo Lumion" width="65" height="auto" />
                   </GridItem>
                   <GridItem rowSpan={1} colSpan={1}></GridItem>
                   <GridItem rowSpan={1} colSpan={1}></GridItem>
-                  <GridItem
-                    rowSpan={1}
-                    colSpan={1}
-                    display="flex"
-                    justifyContent="center"
-                    alignItems="center"
-                  >
-                    <Image loading="lazy" className="image image-animate image-4"
-                      src="./motores/TWIMO.webp"
-                      alt="Logo"
-                      w="130px"
-                    />
+                  <GridItem rowSpan={1} colSpan={1} display="flex" justifyContent="center" alignItems="center">
+                    <img loading="lazy" className="image image-animate image-4"
+                      src={cloudUrl("public/motores/TWIMO.webp", { w: 260 })}
+                      alt="Logo Twinmotion" width="130" height="auto" />
                   </GridItem>
-                  <GridItem
-                    rowSpan={1}
-                    colSpan={1}
-                    display="flex"
-                    justifyContent="center"
-                    alignItems="center"
-                  >
-                    <Image loading="lazy" className="image image-animate image-5"
-                      src="./motores/VRAY.webp"
-                      alt="Logo"
-                      w="110px"
-                    />
+                  <GridItem rowSpan={1} colSpan={1} display="flex" justifyContent="center" alignItems="center">
+                    <img loading="lazy" className="image image-animate image-5"
+                      src={cloudUrl("public/motores/VRAY.webp", { w: 220 })}
+                      alt="Logo Vray" width="110" height="auto" />
                   </GridItem>
                 </>
               )}
@@ -338,15 +295,17 @@ export default function Nosotros() {
       // textAlign="center" // Centra el texto dentro de los boxes
       >
         <Box flex="1" boxShadow="md" p={4} m={10} textAlign="center">
-          <Image loading="lazy" src="./publico/PerfilFernando.webp"
+          <OptimizedImage
+            src={cloudUrl('public/publico/PerfilFernando.webp', { w: 600 })}
+            alt="Fernando Patiño"
+            alt="Perfil Fernando Guerrero"
             borderRadius="md"
             mb="40px"
-            objectFit="contain"
             width="170px"
-            height="170px" // Asegura la misma altura para ambas imágenes
+            height="170px"
             mx="auto"
-            className="service-image"
-            onClick={() => handleClickImage("./publico/PerfilFernando.webp")}
+            cursor="pointer"
+            onClick={() => handleClickImage(cloudUrl('public/publico/PerfilFernando.webp', { w: 1200 }))}
           />
           <Text display={"flex"} alignItems={"center"} color={"white"}>
             <FaUserCircle style={{ marginRight: "8px" }} />
@@ -367,15 +326,17 @@ export default function Nosotros() {
           </Text>
         </Box>
         <Box flex="1" boxShadow="md" p={4} m={10} textAlign="center">
-          <Image loading="lazy" src="./publico/PerfilJulian.webp"
+          <OptimizedImage
+            src={cloudUrl('public/publico/PerfilJulian.webp', { w: 600 })}
+            alt="Julián Durán"
+            alt="Perfil Julian Chaves"
             borderRadius="md"
             mb="40px"
-            objectFit="contain"
             width="170px"
-            height="170px" // Asegura la misma altura para ambas imágenes
+            height="170px"
             mx="auto"
-            className="service-image"
-            onClick={() => handleClickImage("./publico/PerfilJulian.webp")}
+            cursor="pointer"
+            onClick={() => handleClickImage(cloudUrl('public/publico/PerfilJulian.webp', { w: 1200 }))}
           />
           <Text display={"flex"} alignItems={"center"} color={"white"}>
             <FaUserCircle style={{ marginRight: "8px" }} />

@@ -28,7 +28,7 @@ import { FiUpload, FiLogOut, FiTrash2 } from "react-icons/fi";
 // 1. Crea cuenta gratis en https://cloudinary.com
 // 2. En Settings > Upload > Add upload preset → modo "Unsigned" → copia el nombre
 // 3. Reemplaza los valores de abajo con los tuyos
-const CLOUDINARY_CLOUD_NAME = "dba6au6s5";
+const CLOUDINARY_CLOUD_NAME = "dibjbl4zp";
 const CLOUDINARY_UPLOAD_PRESET = "portafolio_swag";
 
 // Contraseña simple para proteger el panel (cámbiala)
@@ -38,7 +38,7 @@ const ADMIN_PASSWORD = "swag2024";
 const CARPETAS = [
     "EDIFICIO",
     "ING_ECU",
-    "HABI_NIÑA",
+    "HABITACION_NINA",
     "COCINA_INTERIOR",
     "HABITACION",
     "HABITACION2",

@@ -13,6 +13,8 @@ import { RiWhatsappFill } from "react-icons/ri";
 import IconButtonReusable from "./IconButtonReusable";
 import { useTranslation } from "react-i18next";
 import { CONTACT_INFO, WHATSAPP_URL } from "../utils/constants";
+import OptimizedImage from "./OptimizedImage";
+import { cloudUrl } from "../utils/cloudinary";
 
 function Footer() {
   const { t } = useTranslation();
@@ -56,9 +58,10 @@ function Footer() {
             display={"flex"}
             alignItems={"center"}
             justifyContent={"center"}
+            gap={4}
           >
-            <Image loading="lazy" src="./publico/VER_WHITE.webp" alt="Logo" width="110px" />
-            <Image loading="lazy" src="./publico/LogoJulian.webp" alt="Logo" width="110px" />
+            <OptimizedImage src={cloudUrl("public/publico/VER_WHITE.webp", { w: 220 })} alt="Logo SWAG" width="110px" aspectRatio="auto" />
+            <OptimizedImage src={cloudUrl("public/publico/LogoJulian.webp", { w: 220 })} alt="Logo Julián" width="110px" aspectRatio="auto" />
           </GridItem>
           <GridItem height="100%" bg="white" />
           <GridItem
@@ -95,16 +98,16 @@ function Footer() {
         </Grid>
       ) : (
         <Flex direction="column" alignItems="center" width="100%">
-          <Flex>
-            <Image loading="lazy" src="./publico/VER_WHITE.webp"
-              alt="Logo"
+          <Flex gap={4} mb="24px">
+            <OptimizedImage src={cloudUrl("public/publico/VER_WHITE.webp", { w: 200 })}
+              alt="Logo SWAG"
               width="100px"
-              mb="24px"
+              aspectRatio="auto"
             />
-            <Image loading="lazy" src="./publico/LogoJulian.webp"
-              alt="Logo"
+            <OptimizedImage src={cloudUrl("public/publico/LogoJulian.webp", { w: 200 })}
+              alt="Logo Julián"
               width="100px"
-              mb="24px"
+              aspectRatio="auto"
             />
           </Flex>
           <Text color="white" fontSize="lg" mb="24px">

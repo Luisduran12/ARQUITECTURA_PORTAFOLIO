@@ -2,12 +2,13 @@ import {
   Box,
   Button,
   Flex,
-  Image,
   Text,
   useBreakpointValue,
 } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
+import OptimizedImage from "../components/OptimizedImage";
+import { cloudUrl, cloudBg } from "../utils/cloudinary";
 
 export default function InicioNosotros() {
   const { t } = useTranslation();
@@ -19,7 +20,7 @@ export default function InicioNosotros() {
       {/* Imagen de fondo difuminada */}
       {isMdOrLarger && (
         <Box
-          backgroundImage={"url(./RENDERS/EDIFICIO/e1.webp)"}
+          backgroundImage={cloudBg("public/RENDERS/EDIFICIO/e1.webp", { w: 1280 })}
           backgroundSize="cover"
           backgroundPosition="center"
           filter="blur(8px)"
@@ -43,9 +44,12 @@ export default function InicioNosotros() {
           display={isMdOrLarger ? "flex" : "none"}
           justifyContent="center"
           alignItems="center"
+          position="relative"
         >
-          <Image loading="lazy" src="./RENDERS/EDIFICIO/e1.webp"
-            alt="Imagen de fondo"
+          <OptimizedImage
+            src={cloudUrl("public/RENDERS/EDIFICIO/e1.webp", { w: 1280 })}
+            alt="Imagen arquitectónica nosotros"
+            aspectRatio="auto"
             style={{
               width: "100%",
               height: "100%",
@@ -123,8 +127,10 @@ export default function InicioNosotros() {
       </Flex>
       {/* Imagen nítida en fondo para pantallas pequeñas */}
       {!isMdOrLarger && (
-        <Image loading="lazy" src="./RENDERS/EDIFICIO/e1.webp"
-          alt="Imagen de fondo"
+        <OptimizedImage
+          src={cloudUrl("public/RENDERS/EDIFICIO/e1.webp", { w: 800 })}
+          alt="Imagen arquitectónica"
+          aspectRatio="auto"
           style={{
             width: "100%",
             height: "100%",

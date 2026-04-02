@@ -1,5 +1,5 @@
 import Slider from "react-slick";
-import { Flex, Box, Text, Button, Image } from "@chakra-ui/react";
+import { Flex, Box, Text, Button } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,7 +11,8 @@ import InicioTrabajo from "./InicioTrabajo";
 import StatsSection from "../components/StatsSection";
 import { useTranslation } from "react-i18next";
 import { Link as RouterLink } from "react-router-dom";
-import { useState } from "react";
+import OptimizedImage from "../components/OptimizedImage";
+import { cloudUrl } from "../utils/cloudinary";
 
 const settings = {
   dots: false,
@@ -33,11 +34,11 @@ export default function Inicio() {
   const { t } = useTranslation();
   // Carrusel de imágenes
   const carouselImages = [
-    { src: "./RENDERS/COCINA_INTERIOR/ci1.webp", text: t('carrusel.bienvenido') },
-    { src: "./RENDERS/HABITACION2/hb4.webp", text: t('carrusel.visualizacion') },
-    { src: "./RENDERS/ZONA_TVs/zt2.webp", text: t('carrusel.inspiracion') },
-    { src: "./RENDERS/EDIFICIO/e2.webp", text: t('carrusel.transformacion') },
-    { src: "./RENDERS/BBQ/b2.webp", text: t('carrusel.innovacion') },
+    { src: cloudUrl('public/RENDERS/COCINA_INTERIOR/ci1.webp', { w: 1920 }), text: t('carrusel.bienvenido') },
+    { src: cloudUrl('public/RENDERS/HABITACION2/hb4.webp', { w: 1920 }), text: t('carrusel.visualizacion') },
+    { src: cloudUrl('public/RENDERS/ZONA_TVs/zt2.webp', { w: 1920 }), text: t('carrusel.inspiracion') },
+    { src: cloudUrl('public/RENDERS/EDIFICIO/e2.webp', { w: 1920 }), text: t('carrusel.transformacion') },
+    { src: cloudUrl('public/RENDERS/BBQ/b2.webp', { w: 1920 }), text: t('carrusel.innovacion') },
   ];
 
   const serviciosRef = useRef(null);
@@ -52,22 +53,10 @@ export default function Inicio() {
   };
 
   const serviciosData = [
-    {
-      imagen: "./servicios/FotoRealista.webp",
-      titulo: t('servicios.renderizado'),
-    },
-    {
-      imagen: "./servicios/TresD.webp",
-      titulo: t('servicios.animaciones'),
-    },
-    {
-      imagen: "./servicios/Virtuales.webp",
-      titulo: t('servicios.recorridos'),
-    },
-    {
-      imagen: "./servicios/Interiores.webp",
-      titulo: t('servicios.visualizacion'),
-    },
+    { imagen: cloudUrl('public/servicios/FotoRealista.webp', { w: 200 }), titulo: t('servicios.renderizado') },
+    { imagen: cloudUrl('public/servicios/TresD.webp', { w: 200 }), titulo: t('servicios.animaciones') },
+    { imagen: cloudUrl('public/servicios/Virtuales.webp', { w: 200 }), titulo: t('servicios.recorridos') },
+    { imagen: cloudUrl('public/servicios/Interiores.webp', { w: 200 }), titulo: t('servicios.visualizacion') },
   ];
 
   return (
@@ -84,20 +73,16 @@ export default function Inicio() {
           {carouselImages.map((image, index) => (
             <Box key={index} position="relative" height="100vh" width="100%">
               {/* Imagen principal con overlay oscuro para contraste */}
-              <Box
-                as="img"
+              <OptimizedImage
                 src={image.src}
                 alt={image.text}
+                priority={index === 0}
+                aspectRatio="none"
+                position="absolute"
+                inset="0"
                 width="100%"
                 height="100%"
-                objectFit="cover"
-                loading={index === 0 ? "eager" : "lazy"}
-                fetchpriority={index === 0 ? "high" : "auto"}
-                decoding={index === 0 ? "sync" : "async"}
-                position="absolute"
-                top="0"
-                left="0"
-                zIndex="0"
+                borderRadius="0"
               />
               <Box
                 position="absolute"

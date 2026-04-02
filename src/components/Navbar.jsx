@@ -19,6 +19,8 @@ import { RiWhatsappFill } from "react-icons/ri";
 import IconButtonReusable from "./IconButtonReusable";
 import { useTranslation } from "react-i18next";
 import { CONTACT_INFO, WHATSAPP_URL } from "../utils/constants";
+import OptimizedImage from "./OptimizedImage";
+import { cloudUrl } from "../utils/cloudinary";
 
 function Navbar() {
   const { t } = useTranslation();
@@ -71,13 +73,15 @@ function Navbar() {
       <Flex direction="column">
         <Flex>
           <RouterLink to="/" aria-label="Inicio - SWAG Arquitectos">
-            <Image loading="lazy" src="./publico/HOR_WHITE.webp" alt="Logo SWAG Arquitectos" w="120px" />
+            <OptimizedImage src={cloudUrl("public/publico/HOR_WHITE.webp", { w: 240 })} alt="Logo SWAG Arquitectos" width="120px" priority aspectRatio="auto" />
           </RouterLink>
           <RouterLink to="/" aria-label="Inicio - SWAG Arquitectos">
-            <Image loading="lazy" src="./publico/LogoJulian.webp"
+            <OptimizedImage src={cloudUrl("public/publico/LogoJulian.webp", { w: 120 })}
               alt="Logo Julián"
-              w="60px"
+              width="60px"
               ml="10px"
+              priority
+              aspectRatio="auto"
             />
           </RouterLink>
         </Flex>
