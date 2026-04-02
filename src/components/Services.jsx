@@ -1,13 +1,15 @@
 import { Flex, Box, Image, Text, SimpleGrid, IconButton, Center } from "@chakra-ui/react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { motion, AnimatePresence } from "framer-motion";
-import { IoClose } from "react-icons/io5";
+import { motion } from "framer-motion";
 import OptimizedVideo from "./OptimizedVideo";
 
 const Services = ({ servicios }) => {
   const { t } = useTranslation();
-  const [activeVideo, setActiveVideo] = useState(null);
+
+  // Default to the first service's video or an explicit default
+  const defaultVideo = 'public/videos/animaciones3d.mp4';
+  const [activeVideo, setActiveVideo] = useState(defaultVideo);
 
   const serviceVideos = {
     [t('servicios.renderizado')]: 'public/videos/animaciones3d.mp4',
@@ -19,8 +21,7 @@ const Services = ({ servicios }) => {
   const handleCardClick = (titulo) => {
     const videoKey = serviceVideos[titulo];
     if (videoKey) {
-      // Toggle if already active, otherwise set new
-      setActiveVideo(prev => prev === videoKey ? null : videoKey);
+      setActiveVideo(videoKey);
     }
   };
 
@@ -42,53 +43,35 @@ const Services = ({ servicios }) => {
         ))}
       </SimpleGrid>
 
-      {/* Inline Video Player Section */}
-      <AnimatePresence>
-        {activeVideo && (
-          <Box
-            as={motion.div}
-            initial={{ opacity: 0, scale: 0.95, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.95, y: 20 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            width="100%"
-            maxW="1000px"
-            position="relative"
-            mt={4}
-            borderRadius="3xl"
-            overflow="hidden"
-            boxShadow="0 25px 50px -12px rgba(0, 210, 255, 0.25)"
-            border="1px solid rgba(0, 210, 255, 0.3)"
-          >
-            {/* Close Button */}
-            <IconButton
-              icon={<IoClose size={24} />}
-              position="absolute"
-              top={4}
-              right={4}
-              zIndex={10}
-              variant="solid"
-              colorScheme="blackAlpha"
-              color="white"
-              borderRadius="full"
-              onClick={() => setActiveVideo(null)}
-              aria-label="Cerrar video"
-              _hover={{ bg: "blue.500", transform: "rotate(90deg)" }}
-              transition="all 0.3s ease"
-            />
-
-            <OptimizedVideo
-              src={activeVideo}
-              autoPlay
-              controls
-              muted={false} // Allow sound since user clicked to play
-              width={1280}
-              borderRadius="3xl"
-              aspectRatio="16/9"
-            />
-          </Box>
-        )}
-      </AnimatePresence>
+      {/* Permanent Video Player Section */}
+      <Box
+        width="100%"
+        maxW="1100px"
+        position="relative"
+        mt={4}
+        borderRadius="3xl"
+        overflow="hidden"
+        boxShadow="0 25px 50px -12px rgba(0, 210, 255, 0.25)"
+        border="1px solid rgba(0, 210, 255, 0.3)"
+        bg="black"
+        as={motion.div}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+      >
+        <OptimizedVideo
+          key={activeVideo} // Important: force re-mount/re-load when video changes
+          src={activeVideo}
+          autoPlay
+          controls
+          muted={false}
+          width={1920}
+          borderRadius="3xl"
+          aspectRatio="16/9"
+          priority={true}
+        />
+      </Box>
     </Flex>
   );
 };
