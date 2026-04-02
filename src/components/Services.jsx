@@ -1,4 +1,4 @@
-import { Flex, Box, Image, Text, SimpleGrid, IconButton, Center } from "@chakra-ui/react";
+import { Flex, Box, Image, Text, SimpleGrid, Container } from "@chakra-ui/react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
