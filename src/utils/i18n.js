@@ -85,6 +85,7 @@ const resources = {
         interior_airbnb: "INTERIOR ARBNB",
         fachadas: "FACHADAS",
         zona_social: "ZONA SOCIAL",
+        interiorismo: "INTERIORISMO",
       },
       /* CARPETA IMAGENES */
       carpetaImagen: {
@@ -194,6 +195,7 @@ const resources = {
         interior_airbnb: "INTERIOR ARBNB",
         fachadas: "FACADES",
         zona_social: "SOCIAL AREA",
+        interiorismo: "INTERIOR DESIGN",
       },
       carpetaImagen: {
         volver: "Back to portfolio",
