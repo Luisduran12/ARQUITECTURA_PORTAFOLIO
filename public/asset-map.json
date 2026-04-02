@@ -942,5 +942,29 @@
     "version": 1775097529,
     "is_video": false,
     "hls": null
+  },
+  "public/RENDERS/EDIFICIO/e12.png": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775098261/IMG_0033_uj65bb.png",
+    "public_id": "IMG_0033_uj65bb",
+    "format": "png",
+    "version": 1775098261,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/EDIFICIO/e13.png": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775098260/IMG_0030_nqncjb.png",
+    "public_id": "IMG_0030_nqncjb",
+    "format": "png",
+    "version": 1775098260,
+    "is_video": false,
+    "hls": null
+  },
+  "public/RENDERS/EDIFICIO/e14.png": {
+    "url": "https://res.cloudinary.com/dibjbl4zp/image/upload/v1775098259/IMG_0031_wz7dfa.png",
+    "public_id": "IMG_0031_wz7dfa",
+    "format": "png",
+    "version": 1775098259,
+    "is_video": false,
+    "hls": null
   }
 }

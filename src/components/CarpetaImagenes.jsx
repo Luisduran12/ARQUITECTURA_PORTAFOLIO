@@ -46,6 +46,9 @@ const carpetaImagesFallback = {
     { src: "/RENDERS/EDIFICIO/e4.webp" },
     { src: "/RENDERS/EDIFICIO/e5.webp" },
     { src: "/RENDERS/EDIFICIO/e6.webp" },
+    { src: "/RENDERS/EDIFICIO/e12.png" },
+    { src: "/RENDERS/EDIFICIO/e13.png" },
+    { src: "/RENDERS/EDIFICIO/e14.png" },
   ],
   FACHADA: [
     { src: "/RENDERS/FACHADA/f2.webp" },
